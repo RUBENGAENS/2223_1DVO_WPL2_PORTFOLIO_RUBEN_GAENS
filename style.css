@@ -16,13 +16,13 @@ a {
     transition: transform .5s;
 }
 ::-webkit-scrollbar {
-    width: 0.35rem;
+    width: 0.45rem;
 }
 ::-webkit-scrollbar-track {
     background: #222327;
 }
 ::-webkit-scrollbar-thumb {
-    background: #98A68F;
+    background: rgba(152, 166, 143, 0.75);
     border-radius: 5px;
 }
 section {
@@ -112,8 +112,8 @@ ul li {
     -webkit-transition: all .2s linear;
     transition: all .2s linear;
     padding: 0.9375rem 0;
-    background-color: rgba(34, 35, 39, 0.6);
-    backdrop-filter: blur(10px);
+    background-color: rgba(34, 35, 39, 0.94);
+    backdrop-filter: blur(5px);
 }
 .header_wrapper .navbar-brand img {
     max-width: 3rem;
@@ -200,7 +200,7 @@ ul li {
     transition: all .5s ease 0s;
 }
 .skills_wrapper .portfolio-img:hover .overlay{
-    box-shadow: 0 0 50px rgba(243, 117, 102, 0.2);
+    box-shadow: 0 0.9375rem 1.875rem rgba(152, 166, 143, 0.2);
     border-radius: 10px;
 }
 .interesses_wrapper {
@@ -228,7 +228,7 @@ iframe {
     height: 500px;
 }
 iframe:hover {
-    box-shadow: 0 0 50px rgba(243, 117, 102, 0.09);
+    box-shadow: 0 0.9375rem 1.875rem rgba(152, 166, 143, 0.1);
 }
 .eindreflectie_wrapper .nav-link {
     font-size: 0.9375rem;
