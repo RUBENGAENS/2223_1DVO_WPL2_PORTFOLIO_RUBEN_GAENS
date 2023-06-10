@@ -210,16 +210,6 @@ span.color {
 }
 .interesses_wrapper .card {
     background-color: #2a2c2f;
-    cursor: pointer;
-    -webkit-transition: all .4s ease 0s;
-    -ms-transition: all .4s ease 0s;
-    -moz-transition: all .4s ease 0s;
-    -o-transition: all .4s ease 0s;
-    transition: all .4s ease 0s;
-}
-.interesses_wrapper .card:hover {
-    box-shadow: 0 0.9375rem 1.875rem rgba(152, 166, 143, 0.1);
-    background-color:#222327;
 }
 .video {
     width: 100%;
@@ -314,6 +304,9 @@ button.contact-color:hover {
     font-weight: 600;
 }
 .footer_wrapper .footer-text a{
+    color: #F37566;
+}
+span.color_end {
     color: #F37566;
 }
 #top {
