@@ -7,6 +7,8 @@
 body {
     width: 100%;
     background-color: #222327;
+    background-image: url("assets/background.png");
+    background-size: cover;
 }
 a {
     text-decoration: none;
@@ -173,8 +175,11 @@ ul li {
 }
 .skills_wrapper .nav-link.active {
     color: #F37566;
-    background-color: #fff;
+    background-color: #ffffff;
     border-radius: 35px;
+}
+span.color {
+    color: #98A68F;
 }
 .skills_wrapper .portfolio-img {
     position: relative;
@@ -185,7 +190,7 @@ ul li {
     transition: transform .5s;
 }
 .portfolio-img img {
-    border-radius: 10px;
+    border-radius: 15px;
 }
 .skills_wrapper .portfolio-img .overlay {
     position: absolute;
@@ -202,9 +207,6 @@ ul li {
 .skills_wrapper .portfolio-img:hover .overlay{
     box-shadow: 0 0.9375rem 1.875rem rgba(152, 166, 143, 0.2);
     border-radius: 10px;
-}
-.interesses_wrapper {
-    background-color: #222327;
 }
 .interesses_wrapper .card {
     background-color: #2a2c2f;
@@ -244,7 +246,7 @@ iframe:hover {
 }
 .eindreflectie_tekst span {
     color: #F37566;
-    font-size: 22px;
+    font-size: 18px;
 }
 .eindreflectie_tekst {
     height: 490px;
@@ -387,6 +389,6 @@ button.contact-color:hover {
 }
 @media screen and (max-width: 600px) {
     .header_wrapper .navbar{
-        background-color: rgba(34, 35, 39, 0.91);
+        background-color: rgba(34, 35, 39, 0.95);
     }
 }
