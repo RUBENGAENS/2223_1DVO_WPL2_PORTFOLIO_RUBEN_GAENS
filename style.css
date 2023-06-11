@@ -114,8 +114,11 @@ ul li {
     -webkit-transition: all .2s linear;
     transition: all .2s linear;
     padding: 0.9375rem 0;
-    background-color: rgba(34, 35, 39, 0.75);
+    background-color: rgba(34, 35, 39, 0.88);
     backdrop-filter: blur(10px);
+    position: fixed;
+    width: 100%;
+    z-index: 999;
 }
 .header_wrapper .navbar-brand img {
     max-width: 3rem;
@@ -170,7 +173,7 @@ ul li {
     font-size: 0.9375rem;
     font-weight: 500;
     margin-right: 0.25rem;
-    color: #F37566;
+    color: #fff;
     text-transform: uppercase;
 }
 .skills_wrapper .nav-link.active {
@@ -178,8 +181,14 @@ ul li {
     background-color: #ffffff;
     border-radius: 35px;
 }
-span.color {
+span.color_eigenproject {
     color: #98A68F;
+}
+span.color:hover {
+    color: #F37566;
+}
+span.color_eigenproject:hover {
+    color: #F37566;
 }
 .skills_wrapper .portfolio-img {
     position: relative;
@@ -383,5 +392,10 @@ span.color_end {
 @media screen and (max-width: 600px) {
     .header_wrapper .navbar{
         background-color: rgba(34, 35, 39, 0.95);
+    }
+}
+@media screen and (max-width: 450px) {
+    .header_wrapper .navbar{
+        position: absolute;
     }
 }
