@@ -16,14 +16,3 @@ const observer = new IntersectionObserver((entries) => {
 });
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
-
-document.addEventListener("DOMContentLoaded", () => {
-    const loaderWrapper = document.querySelector(".loader-wrapper");
-    if (loaderWrapper) {
-        loaderWrapper.style.transition = "opacity 1s";
-        loaderWrapper.style.opacity = "0";
-        setTimeout(() => {
-            loaderWrapper.style.display = "none";
-        }, 1000); // 1000ms = 1s (gelijk aan "slow")
-    }
-});
