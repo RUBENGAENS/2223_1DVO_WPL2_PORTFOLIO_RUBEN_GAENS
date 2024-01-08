@@ -147,6 +147,10 @@ ul li {
     background-color: #F0F0F0;
   }
   
+
+
+
+
   /* Mediaquery's*/
 @media (max-width: 1278px) {
     .line3::before {
