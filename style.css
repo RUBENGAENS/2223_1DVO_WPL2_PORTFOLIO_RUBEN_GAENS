@@ -283,8 +283,6 @@ section {
 .eigenfoto:hover {
     transform: scale(1.5);
 }
-
-
 div.scroll-doos {
     background-color:  #F0F0F0;
     overflow-x: auto;
