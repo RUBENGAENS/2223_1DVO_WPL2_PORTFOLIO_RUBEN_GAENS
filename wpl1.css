@@ -9,7 +9,13 @@ body {
     background-color: #1c1c1c;
     background-size: cover;
 }
-
+.color {
+    color: #E15C2B;
+    font-family: "Zen Dots", sans-serif;
+    font-size: 0.7400rem;
+    text-transform: uppercase;
+    display: inline-block;
+}
 h1 {
     font-size: 800%;
     line-height: 9rem;
@@ -155,6 +161,46 @@ a {
     background-color: #F0F0F0;
   }
   
+
+
+.row [class*="col-"] {
+    margin: 0;
+    padding: 0;
+}
+.socials {
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.social-link {
+    display: block;
+    text-align: center;
+    padding: 65px;
+    transition: background-color 0.2s ease;
+    border: 2px solid #F0F0F0;
+}
+
+.social-link span {
+    color: #F0F0F0; 
+}
+
+.social-link:hover {
+    background-color: #f15a2a; 
+}
+
+.instagram, .linkedin, .facebook {
+    border: 2px solid #F0F0F0;
+    border-left: none;
+}
+.footer-text {
+    padding-top: 50px;
+    font-size: 0.7rem;
+    line-height: 1.25rem;
+    font-weight: 600;
+}
+span.color_end {
+    color: #f15a2a;
+}
   /* Mediaquery's*/
 @media (max-width: 1278px) {
     .line3::before {
@@ -179,5 +225,40 @@ a {
         }
         .facebook {
             border-top: none;
+        }
+    }
+
+
+
+
+    @media (max-width: 975px) {
+        .social-link {
+            padding: 15px;
+        }
+    }
+    @media (max-width: 991px) {
+        .facebook {
+            border-top: none;
+        }
+    }
+    @media (min-width: 768px) {
+        .socials {
+            margin-top: 50px;
+        }
+    }
+    @media (max-width: 767px) {
+        .socials {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    
+        .social-link {
+            padding: 10px;
+        }
+        .linkedin {
+            border-top: none;
+        }
+        .instagram, .linkedin, .facebook {
+            border-right: none;
         }
     }
