@@ -191,6 +191,7 @@ a {
 .instagram, .linkedin, .facebook {
     border: 2px solid #F0F0F0;
     border-left: none;
+    border-bottom: none;
 }
 .footer-text {
     padding-top: 50px;
@@ -239,6 +240,10 @@ span.color_end {
     @media (max-width: 991px) {
         .facebook {
             border-top: none;
+        }
+        .instagram, .linkedin, .facebook {
+            border: 2px solid #F0F0F0;
+            border-left: none;
         }
     }
     @media (min-width: 768px) {
