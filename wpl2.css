@@ -217,6 +217,9 @@ span.color_end {
     .line::before, .line3::before, .line2::before {
         width: 80%;
       }
+      h3 {
+        font-size: 1.5625rem;
+    }
     }
     @media (max-width: 991px) {
         .header_wrapper .navbar-collapse {
