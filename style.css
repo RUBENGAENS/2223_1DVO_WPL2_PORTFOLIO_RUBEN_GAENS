@@ -318,7 +318,7 @@ div.scroll-doos {
 }
 .email {
     color: #f15a2a;
-    font-size: 31px; 
+    font-size: 45px; 
     font-family: "Zen Dots", sans-serif;
 }
 
@@ -481,6 +481,9 @@ span.color_end {
     a#scroll-btn {
         bottom: 2em;
       }
+      .email {
+        font-size: 30px;
+    }
 }
 @media screen and (max-width: 500px) {
     a#scroll-btn {
@@ -494,6 +497,12 @@ span.color_end {
 }
 @media (max-width: 480px) {
     .email {
-        font-size: 20px; 
+        font-size: 22px; 
+    }
+}
+@media (max-width: 574px) {
+    .container-md {
+        padding-right: 20px; /* Voeg rechts padding toe aan de container */
+        padding-left: 20px;  /* Voeg links padding toe aan de container */
     }
 }
