@@ -192,3 +192,9 @@ a {
         border-top: none;
     }
 }
+@media (max-width: 768px) {
+    h5 {
+        font-size: 200%;
+    }
+
+}

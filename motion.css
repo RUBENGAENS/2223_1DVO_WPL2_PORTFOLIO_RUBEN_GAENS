@@ -223,3 +223,9 @@ a {
       max-width: 100%;
     }
   }
+  @media (max-width: 768px) {
+    h5 {
+        font-size: 200%;
+    }
+
+}
