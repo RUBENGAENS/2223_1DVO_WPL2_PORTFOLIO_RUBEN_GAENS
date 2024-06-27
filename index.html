@@ -22,45 +22,33 @@
 
 </head>
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="90">
-    <div class="custom-cursor" id="customCursor"></div>
-    <header class="header_wrapper">
-        <nav class="navbar navbar-expand-lg">
-            <div class="container">
-                <a class="navbar-brand" href="index.html">
-                    <img src="assets/logo_ruben_win.png" class="img-fluid logo_hover" alt="logo">
-                </a>
 
-                <div class="animated-text">
+    <header class="header_wrapper">
+        <nav class="navbar">
+            <div class="container navbarResponsive">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/logo_ruben_win.png" class="logo_hover" alt="logo">
+                    <div class="animated-text">
                         <div class="line">is probably at the gym 🏋🏾👟</div>
                         <div class="line">is making some designs 👨🏿‍💻</div>
                         <div class="line">is most likely making pasta 🍝</div>
                         <div class="line">is exploring the world 🌏 🛫</div>
-                </div>
-   
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-       
-                    <i class="fas fa-stream navbar-togler-icon kleur_icon"></i>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav menu-navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link text-uppercase" href="wpl1.html">Werkplekleren1</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-uppercase" href="wpl2.html">/ Werkplekleren2</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-uppercase" href="wpl3.html">/ Werkplekleren3</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-uppercase" href="wpl4.html">/ Werkplekleren4</a>
-                        </li>
-                    </ul>
-                </div>
+                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" onclick="openNav()">Menu</button>
             </div>
         </nav>
     </header>
+    
+    <!-- Overlay -->
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="wpl1.html">Projects</a>
+            <a href="wpl2.html">About</a>
+            <a href="wpl3.html">Contact</a>
+        </div>
+    </div>
 
 
 <section id="home" class="banner_wrapper">
@@ -75,7 +63,7 @@
             </div>
         </div>
 </section>
-
+</div>
 
 <div class="line3"></div>
 <div class="container d-flex">
@@ -87,7 +75,7 @@
     <div class="row">
         <div class="col-12 col-md-5 d-flex align-items-center pb-5">
             <div class="text-section">
-                <h4>Posterrover</h4>
+                <h4>Website</h4>
                 <p class="pb-5"> POSTERROVER is een project waarbij ik mijn creatieve expressie en artistieke visie deel door middel van een webshop. Met dit fictief online platform kunnen bezoekers kennismaken met mijn unieke verzameling posters, elk doordrenkt met mijn eigen stijl en creativiteit.</p>
                 <a href="posterrover.html" class="btn btn-primary knop1">Lees meer<i class="fas fa-arrow-right pijl"></i></a>
             </div>
@@ -102,6 +90,7 @@
 </div>
 </div>
 <div class="tussenstuk"></div>
+
 
 <div class="line3"></div>
 <div class="container d-flex">
