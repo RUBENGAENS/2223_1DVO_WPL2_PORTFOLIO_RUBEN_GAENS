@@ -9,23 +9,34 @@
           integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/2fb07d68d9.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <script defer src="main.js"></script>
-
-
+    <script defer src="cursor.js"></script>
+    <script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+		
 
 </head>
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="90">
+    <div class="custom-cursor" id="customCursor"></div>
     <header class="header_wrapper">
         <nav class="navbar navbar-expand-lg">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
                     <img src="assets/logo_ruben_win.png" class="img-fluid logo_hover" alt="logo">
                 </a>
+
+                <div class="animated-text">
+                        <div class="line">is probably at the gym 🏋🏾👟</div>
+                        <div class="line">is making some designs 👨🏿‍💻</div>
+                        <div class="line">is most likely making pasta 🍝</div>
+                        <div class="line">is exploring the world 🌏 🛫</div>
+                </div>
+   
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
        
@@ -53,15 +64,14 @@
 
 
 <section id="home" class="banner_wrapper">
-    <div class="container-fluid">
-        <div class="row text-center">
-                <h2 class="position-relative text-md">Hallo, ik ben</h2>
-                <h1 class="text-uppercase text-lg">Ruben Gaens</h1>
-                <h5 class="text-uppercase text-sm">Student 'Industriële Informatica'</h5>
-                <p class="paragraaf_banner">Welkom op mijn PORTFOLIO</p>
+    <div class=" container-md">
+        <div class="row">
+                <h2 class="position-relative text-md">Hello, I am</h2>
+                <h1 class="text-uppercase">Ruben Gaens</h1>
+                <h5 class="text-uppercase text-sm titelText">A Digital Designer based in Belgium</h5>
+                <p class="paragraaf_banner">Welcome to my PORTFOLIO</p>
                <div class="srolling">
                 <a id="scroll-btn"></a>
-            </div>
             </div>
         </div>
 </section>
@@ -198,13 +208,12 @@
 </div>
 
 <section id="interesses" class="interesses_wrapper">
-    <div class="container">
+    <div class="container-md">
         <div class="row">
             <div class="col-sm-12 text-center mb-3">
-                <h5 class="pb-5">In mijn vrije tijd ben ik graag bezig met muziek. Zowel het beluisteren als het bespelen van
-                    verschillende instrumenten.
+                <h5 class="pb-5">In my spare time, I like to be involved in music. Both listening and playing various instruments.
                 </h5>
-                <p>Swipe om meer foto's te zien <i class="fas fa-arrow-right"></i></p>
+                <p>Swipe to see more pictures <i class="fas fa-arrow-right"></i></p>
             </div> 
         </div>
     </div>
@@ -217,6 +226,13 @@
     <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="fotos img-fluid" alt="foto4" width="900" height="600">
   </div>
 
+   <div class="container">
+        <div class="row justify-content-center pb-5">
+            <div class="col-auto">
+                <a href="music.html" class="btn btn-primary knop1">Music Player<i class="fas fa-arrow-right pijl ml-2"></i></a>
+            </div>
+        </div>
+    </div>
 
 <div class="line3 pt-5"></div>
 <div class="container d-flex justify-content-start">
@@ -285,9 +301,6 @@
     </div>
     </div>
 </footer>
-
-
-
 
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
