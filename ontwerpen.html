@@ -19,69 +19,64 @@
 
 </head>
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="90">
+   
     <header class="header_wrapper">
-        <nav class="navbar navbar-expand-lg">
-            <div class="container">
-                <a class="navbar-brand" href="index.html">
-                    <img src="assets/logo_ruben_win.png" class="img-fluid logo_hover" alt="logo">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-       
-                    <i class="fas fa-stream navbar-togler-icon kleur_icon"></i>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav menu-navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link text-uppercase" href="wpl1.html">Werkplekleren1</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-uppercase" href="wpl2.html">/ Werkplekleren2</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-uppercase" href="wpl3.html">/ Werkplekleren3</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-uppercase" href="wpl4.html">/ Werkplekleren4</a>
-                        </li>
-                    </ul>
+        <nav class="navbar">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/logo_ruben_win.png" class="logo_hover" alt="logo">
+                <div class="animated-text">
+                    <div class="line">is probably at the gym 🏋🏾👟</div>
+                    <div class="line">is making some designs 👨🏿‍💻</div>
+                    <div class="line">is most likely making pasta 🍝</div>
+                    <div class="line">is exploring the world 🌏 🛫</div>
                 </div>
-            </div>
+            </a>
+            <button class="navbar-toggler" type="button" onclick="openNav()">
+                <i class="fa-sharp fa-solid fa-bars hamburgerMenu"></i>
+            </button>
         </nav>
     </header>
+    
+    <!-- Overlay -->
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="wpl1.html">Projects</a>
+            <a href="wpl2.html">About</a>
+            <a href="wpl3.html">Contact</a>
+        </div>
+    </div>
+
 
     <section id="eindreflectie" class="eindreflectie_wrapper">
-        <div class="container">
+        
             <!-- Eerste rij --> 
             <div class="row spaceing mb-5">
-                <div class="col-sm-12 mt-5 pt-3">
-                    <h2 class="text-uppercase">Ontwerpen</h2>
+                <div class="titelCase col-sm-12 mt-5 pt-3">
+                    <h1 class="text-uppercase">Designs</h1>
                 </div>
             </div>
-        </div>
+ 
             <img src="assets/ontwerp_banner.jpg" class="img-fluid w-100" alt="foto">
 
             <div class="line3 spaceing pt-3"></div>
-            <div class="container d-flex">
+            <div class="projectContainer d-flex">
                 <img src="assets/section.png" class="size_logo" alt="logo">
-                <p class="text_head">Introductie</p>
+                <p class="text_head">Introduction</p>
             </div>
 
-            <div class="container">
+            <div class="projectContainer">
                 <div class="row mb-5 pb-5">
                     <div class="col-lg-6 col-sm-6 spatie">
                         <h5 class="eindreflectie_tekst mb-5">
-                            Wat ik fascinerend vind aan het creëren van ontwerpen, is dat er geen vaststaand limiet is. 
-                            Ik wil mezelf steeds verbeteren en leren uit mijn fouten door te luisteren naar kritiek van anderen. Ik
-                    sta open voor nieuwe dingen en heb grote interesse voor de design wereld.
+                            What I find fascinating about creating designs is that there is no set limit. I always want to improve myself and learn from my mistakes by listening to criticism from others. I am open to new things and have a great interest in the design world.
                    
                         </h5>
                     </div>
                     <div class="col-lg-6 col-sm-6 spatie">
-                        <h5>Achtergrond</h5>
+                        <h5>Background</h5>
                         <h6>
-                            Mijn voorkeur gaat uit naar het werken met programma's zoals Photoshop, Illustrator en Indesign. Hoewel ik continu blijf leren, voel ik mij op mijn gemak bij het gebruik van deze software.
-                            Hieronder zijn enkele voorbeelden van ontwerpen die ik gemaakt heb.
+                            My preference is to work with programmes such as Photoshop, Illustrator and Indesign. Although I am constantly learning, I feel comfortable using these software. Below are some examples of designs I have created.
                         </h6>
                     </div>
                 </div>
@@ -89,7 +84,7 @@
 
   
             <div class="line3 spaceing pt-3"></div>
-            <div class="container d-flex">
+            <div class="projectContainer d-flex">
                 <img src="assets/section.png" class="size_logo" alt="logo">
                 <p class="text_head">Designs</p>
             </div>
@@ -124,9 +119,9 @@
               
 
               <div class="line3 spaceing pt-5"></div>
-              <div class="container d-flex mt-5">
+              <div class="projectContainer d-flex mt-5">
                   <img src="assets/section.png" class="size_logo" alt="logo">
-                  <p class="text_head">Eigen lettertype</p>
+                  <p class="text_head">Own typeface</p>
               </div>
 
               <div class="container">
@@ -140,16 +135,13 @@
                 <div class="row mb-5 pb-5">
                     <div class="col-lg-6 col-sm-6 spatie">
                         <h5 class="eindreflectie_tekst mb-5">
-                           In mijn ontwerpproces ben ik enthousiast bezig geweest met het creëren van een op maat gemaakt lettertype.
-                           Dit project heeft mijn vaardigheden in typografie, letterontwerp en grafisch ontwerp aanzienlijk verbeterd. 
+                            In my design process, I have been enthusiastically working on creating a custom typeface. This project significantly improved my skills in typography, type design and graphic design.
                         </h5>
                     </div>
                     <div class="col-lg-6 col-sm-6 spatie">
-                        <h5>Het resultaat</h5>
+                        <h5>The Result</h5>
                         <h6>
-                           Al snel werd mijn voorkeur duidelijk voor een speels lettertype met uitgesproken ronde vormen. Mijn intentie was om te werken met genereuze krommingen, waardoor een levendige en dynamische uitstraling ontstaat. Ik wou voor een levende uitstraling gaan. 
-                           Het gebruik van deze expressieve vormen in mijn ontwerp is niet alleen een artistieke keuze, maar ook een bewuste poging om een karaktervolle identiteit aan mijn typografische creatie te verlenen. 
-                           Hieronder enkele voorbeelden van het lettertype.
+                            My intention was to create a playful typeface with pronounced rounded shapes. My intention was to work with generous curves, creating a lively and dynamic look. I wanted to go for a living look. The use of these expressive shapes in my design is not only an artistic choice, but also a conscious effort to lend a characterful identity to my typographic creation. Below are some examples of the typeface.
                         </h6>
                     </div>
                 </div>

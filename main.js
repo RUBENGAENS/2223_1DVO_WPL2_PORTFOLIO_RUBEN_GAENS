@@ -44,3 +44,17 @@ const move = (e) => {
 	slider.addEventListener('mouseup', end);
 	slider.addEventListener('touchend', end);
 })();
+
+
+function toggleNav() {
+  const nav = document.getElementById("myNav");
+  const toggler = document.querySelector(".navbar-toggler");
+
+  if (nav.style.width === "100%") {
+      nav.style.width = "0%";
+      toggler.classList.remove("open");
+  } else {
+      nav.style.width = "100%";
+      toggler.classList.add("open");
+  }
+}
