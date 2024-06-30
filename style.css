@@ -10,8 +10,32 @@ body {
     background-color: #F0F0F0;
     background-size: cover;
 }
-.hamburgerMenu {
-    font-size: 25px;
+/* Bestaande CSS */
+.navbar-toggler {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    position: relative;
+    z-index: 1001; /* Z-index toegevoegd zodat de knop boven de overlay verschijnt */
+}
+
+.navbar-toggler .dash {
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #333;
+    transition: all 0.3s ease;
+}
+
+/* Nieuwe animatie voor de hamburger knop */
+.navbar-toggler.open .dash:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.navbar-toggler.open .dash:nth-child(2) {
+    transform: rotate(-45deg) translate(5px, -5px);
 }
 
 /* Overlay */
@@ -19,12 +43,13 @@ body {
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1000;
+    z-index: 100;
     top: 0;
     left: 0;
     background-color: #f15a2a;
     overflow-x: hidden;
     transition: 0.5s;
+
 }
 
 .overlay-content {
@@ -32,7 +57,6 @@ body {
     top: 25%;
     width: 100%;
     text-align: center;
-
 }
 
 .overlay a {
@@ -52,22 +76,10 @@ body {
     color: #f1f1f1;
 }
 
-.overlay .closebtn {
-    position: absolute;
-    right: 7px;
-    top: 1;
-    font-size: 45px;
-}
-
 /* Add a smaller font size for small screens */
 @media screen and (max-height: 450px) {
     .overlay a {
         font-size: 20px;
-    }
-    .overlay .closebtn {
-        font-size: 40px;
-        top: 15px;
-        right: 35px;
     }
 }
 
@@ -79,7 +91,6 @@ body {
     align-items: center;
     padding: 0;
     width: 100%;
-    z-index: 999;
     border-bottom: 2px solid #1c1c1c;
     padding-left: 4vw;
     padding-right: 4vw;
@@ -108,7 +119,6 @@ body {
 .navbar-toggler:focus {
     outline: none;
     box-shadow: none;
-
 }
 
 .navbar-toggler:active {
@@ -122,8 +132,6 @@ body {
     overflow: hidden;
     padding-left: 20px;
 }
-
-
 
 .line {
     font-weight: 800;
@@ -140,6 +148,7 @@ body {
     padding-left: 4vw;
     padding-right: 4vw;
 }
+
 @keyframes anim {
     0%, 20% {
         margin-top: 0;
@@ -171,11 +180,11 @@ a {
     transition: transform .5s;
 }
 
-
 .size_logo {
     width: 20px;
     height: 20px;
 }
+
 
 
 .text_head {
@@ -483,12 +492,20 @@ div.scroll-doos img {
 }
 
 .contact {
-    font-size: 10px;
+  padding-top: 40px;
+  padding-bottom: 60px;
 }
+@media (min-width: 2000px) {
+    .contact {
+        padding-top: 80px;
+        padding-bottom: 100px;
+    }
+ }
 .email {
     color: #f15a2a;
-    font-size: 45px; 
+    font-size: 4vw; 
     font-family: "Zen Dots", sans-serif;
+    margin-bottom: 90px;
 }
 
 .email:hover {
