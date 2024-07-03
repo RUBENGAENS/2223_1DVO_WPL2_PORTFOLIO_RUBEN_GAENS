@@ -57,9 +57,31 @@ p {
     padding-left: 10px;
 }
 
+.navbar-toggler {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    position: relative;
+    z-index: 1001; 
+}
 
-.hamburgerMenu {
-    font-size: 25px;
+.navbar-toggler .dash {
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #1c1c1c;
+    transition: all 0.3s ease;
+}
+
+
+.navbar-toggler.open .dash:nth-child(1) {
+    transform: rotate(45deg); 
+}
+
+.navbar-toggler.open .dash:nth-child(2) {
+    transform: rotate(-45deg) translate(6px, -6px);
 }
 
 /* Overlay */
@@ -67,12 +89,13 @@ p {
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1000;
+    z-index: 100;
     top: 0;
     left: 0;
     background-color: #f15a2a;
     overflow-x: hidden;
     transition: 0.5s;
+
 }
 
 .overlay-content {
@@ -80,7 +103,6 @@ p {
     top: 25%;
     width: 100%;
     text-align: center;
-
 }
 
 .overlay a {
@@ -100,26 +122,12 @@ p {
     color: #f1f1f1;
 }
 
-.overlay .closebtn {
-    position: absolute;
-    right: 7px;
-    top: 1;
-    font-size: 45px;
-}
-
-/* Add a smaller font size for small screens */
 @media screen and (max-height: 450px) {
     .overlay a {
         font-size: 20px;
     }
-    .overlay .closebtn {
-        font-size: 40px;
-        top: 15px;
-        right: 35px;
-    }
 }
 
-/* Navbar */
 .navbar {
     display: flex;
     flex-wrap: nowrap;
@@ -127,7 +135,6 @@ p {
     align-items: center;
     padding: 0;
     width: 100%;
-    z-index: 999;
     border-bottom: 2px solid #1c1c1c;
     padding-left: 4vw;
     padding-right: 4vw;
@@ -156,7 +163,6 @@ p {
 .navbar-toggler:focus {
     outline: none;
     box-shadow: none;
-
 }
 
 .navbar-toggler:active {
@@ -170,7 +176,6 @@ p {
     overflow: hidden;
     padding-left: 20px;
 }
-
 
 .line {
     font-weight: 800;
@@ -187,6 +192,7 @@ p {
     padding-left: 4vw;
     padding-right: 4vw;
 }
+
 @keyframes anim {
     0%, 20% {
         margin-top: 0;
@@ -217,7 +223,6 @@ a {
     transform: scale(1.2);
     transition: transform .5s;
 }
-
 
 .size_logo {
     width: 20px;

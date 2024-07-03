@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    width: 100%;
+    background-color: #F0F0F0;
+    background-size: cover;
+}
+main {
+    display: flex;
+    justify-content: center;
+}
+
+
+.navbar-toggler {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    position: relative;
+    z-index: 1001; 
+}
+
+.navbar-toggler .dash {
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #1c1c1c;
+    transition: all 0.3s ease;
+}
+
+
+.navbar-toggler.open .dash:nth-child(1) {
+    transform: rotate(45deg); 
+}
+
+.navbar-toggler.open .dash:nth-child(2) {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* Overlay */
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    background-color: #f15a2a;
+    overflow-x: hidden;
+    transition: 0.5s;
+
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+}
+
+.overlay a {
+    font-family: "Zen Dots", sans-serif;
+    padding: 8px;
+    text-decoration: none;
+    font-size: 5vw;
+    color: #1c1c1c;
+    display: block;
+    transition: 0.2s;
+    padding-left: 4vw;
+    padding-right: 4vw;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #f1f1f1;
+}
+
+@media screen and (max-height: 450px) {
+    .overlay a {
+        font-size: 20px;
+    }
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    width: 100%;
+    border-bottom: 2px solid #1c1c1c;
+    padding-left: 4vw;
+    padding-right: 4vw;
+}
+
+.navbar-brand {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+}
+
+.navbar-brand img {
+    max-width: 2rem;
+    height: auto;
+}
+
+.navbar-toggler {
+    color: #1c1c1c;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.navbar-toggler:hover {
+    color: #f15a2a;
+}
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.navbar-toggler:active {
+    outline: none;
+    box-shadow: none;
+}
+
+.animated-text {
+    color: #1c1c1c;
+    height: 60px;
+    overflow: hidden;
+    padding-left: 20px;
+}
+
+.line {
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: start;
+    font-size: 14px;
+    line-height: 60px;
+}
+
+.line:first-child {
+    animation: anim 15s infinite;
+}
+.projectContainer {
+    padding-left: 4vw;
+    padding-right: 4vw;
+}
+
+@keyframes anim {
+    0%, 20% {
+        margin-top: 0;
+    }
+    25%, 45% {
+        margin-top: -60px;
+    }
+    50%, 70% {
+        margin-top: -120px;
+    }
+    75%, 95% {
+        margin-top: -180px;
+    }
+    100% {
+        margin-top: -240px;
+    }
+}
+
+ul li {
+    margin-left: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo_hover:hover {
+    transform: scale(1.2);
+    transition: transform .5s;
+}
+
+.size_logo {
+    width: 20px;
+    height: 20px;
+}
+
+
+a {
+    color: #1c1c1c;
+}
+a:hover {
+    color: #1c1c1c;
+}
+.projects-container {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    margin: 20px;
+    padding: 55px;
+    text-align: center;
+    width: calc(25% - 40px);
+}
+
+.project-card img {
+    width: 100%;
+    transition: all .5s ease 0s;
+}
+
+.project-card h2 {
+    font-size: 1em;
+    margin: 20px 0 0;
+    font-family: "Zen Dots", sans-serif;
+}
+
+.project-card p {
+    color: #565656;
+    font-size: 0.8em;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.project-card img:hover {
+    transform: scale(0.95);
+    cursor: url('assets/cursorHover.svg'), auto;
+    border-radius: 15px;
+}
+
+/* Media query voor schermen kleiner dan 1200px */
+@media (max-width: 1200px) {
+    .project-card {
+        width: calc(33.33% - 40px);
+    }
+}
+
+/* Media query voor schermen kleiner dan 992px */
+@media (max-width: 992px) {
+    .project-card {
+        width: calc(50% - 40px);
+    }
+}
+
+/* Media query voor schermen kleiner dan 768px */
+@media (max-width: 768px) {
+    .project-card {
+        width: calc(100% - 40px);
+    }
+}
