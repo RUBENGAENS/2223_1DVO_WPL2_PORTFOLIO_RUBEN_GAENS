@@ -10,14 +10,14 @@ body {
     background-color: #F0F0F0;
     background-size: cover;
 }
-/* Bestaande CSS */
+
 .navbar-toggler {
     background: none;
     border: none;
     cursor: pointer;
     padding: 10px;
     position: relative;
-    z-index: 1001; /* Z-index toegevoegd zodat de knop boven de overlay verschijnt */
+    z-index: 1001; 
 }
 
 .navbar-toggler .dash {
@@ -25,17 +25,17 @@ body {
     width: 30px;
     height: 3px;
     margin: 5px auto;
-    background-color: #333;
+    background-color: #1c1c1c;
     transition: all 0.3s ease;
 }
 
-/* Nieuwe animatie voor de hamburger knop */
+
 .navbar-toggler.open .dash:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
+    transform: rotate(45deg); 
 }
 
 .navbar-toggler.open .dash:nth-child(2) {
-    transform: rotate(-45deg) translate(5px, -5px);
+    transform: rotate(-45deg) translate(6px, -6px);
 }
 
 /* Overlay */
@@ -76,14 +76,12 @@ body {
     color: #f1f1f1;
 }
 
-/* Add a smaller font size for small screens */
 @media screen and (max-height: 450px) {
     .overlay a {
         font-size: 20px;
     }
 }
 
-/* Navbar */
 .navbar {
     display: flex;
     flex-wrap: nowrap;
@@ -306,6 +304,10 @@ h4 {
 .projectTitel {
     font-size: 2.5vw;
 }
+.projectTitel2 {
+    padding-top: 130px;
+    font-size: 1.5vw;
+}
 .titelText {
     padding-top: 10px;
 }
@@ -459,6 +461,18 @@ section {
 .eigenfoto:hover {
     transform: scale(1.5);
 }
+
+@media (max-width: 768px) {
+    .about_wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .textAbout, .img-hover-zoom {
+        width: 100%;
+        text-align: center;
+    }
+}
 div.scroll-doos {
     background-color: #F0F0F0;
     overflow-x: auto;
@@ -478,7 +492,7 @@ div.scroll-doos img {
 
 
 .fotos {
-    transition: all .5s ease 0s;
+    transition: all .3s ease 0s;
 }
 
 .fotos:hover {
@@ -489,6 +503,7 @@ div.scroll-doos img {
 }
 .foto_case:hover {
     border-radius: 30px;
+    cursor: url('assets/cursorHover.svg'), auto;
 }
 
 .contact {
@@ -600,9 +615,6 @@ span.color_end {
       }
 }
 @media (max-width: 991px) {
-    .about_wrapper {
-        height: 1400px;
-    }
     .header-scrolled {
         height: auto;
     }
