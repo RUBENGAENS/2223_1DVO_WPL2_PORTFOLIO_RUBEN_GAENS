@@ -12,6 +12,8 @@ body {
 main {
     display: flex;
     justify-content: center;
+  align-items: center;
+padding-top: 30px;
 }
 
 
@@ -202,7 +204,7 @@ a:hover {
 
 .project-card {
     margin: 20px;
-    padding: 55px;
+    padding: 50px;
     text-align: center;
     width: calc(25% - 40px);
 }
@@ -213,13 +215,14 @@ a:hover {
 }
 
 .project-card h2 {
-    font-size: 1em;
+    font-size: 1.4em;
     margin: 20px 0 0;
     font-family: "Zen Dots", sans-serif;
 }
 
 .project-card p {
     color: #565656;
+    padding-top: 2px;
     font-size: 0.8em;
     margin: 0;
     font-family: Arial, sans-serif;
@@ -235,6 +238,8 @@ a:hover {
 @media (max-width: 1200px) {
     .project-card {
         width: calc(33.33% - 40px);
+        padding: 80px;
+        margin: 20px;
     }
 }
 
