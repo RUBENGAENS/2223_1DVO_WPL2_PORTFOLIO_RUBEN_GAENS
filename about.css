@@ -490,3 +490,15 @@ main {
         font-size: 14px;
     }
 }
+.diplomaContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+.diploma {
+    width: 50%;
+    transition: .3s ease-in-out;
+}
+.diploma:hover {
+    border-radius: 30px;
+}
