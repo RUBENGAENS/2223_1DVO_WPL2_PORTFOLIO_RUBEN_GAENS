@@ -238,16 +238,22 @@ a {
 
 
 .knop1 {
-    background-color: #F0F0F0;
+    background-color: #1c1c1c;
     width: 250px;
-    height: 40px;
+    height: 80px;
     border-radius: 0;
     border: 2px solid transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: #F0F0F0;
+    border: 2px solid #F0F0F0;
 }
 .knop1:hover {
     background-color: #F0F0F0;
     border: 2px solid #F0F0F0;
-    color: #F0F0F0;
+    color: #1c1c1c;
 }
 
 
@@ -332,7 +338,7 @@ a {
     padding-right: 4vw;
 }
 
-/* Base Styles */
+
 main {
     margin: 0;
     padding: 0;
@@ -353,7 +359,7 @@ main {
 .marquee__inner {
     display: inline-block;
     white-space: nowrap;
-    animation: marquee 20s linear infinite;
+    animation: marquee 30s linear infinite;
     mix-blend-mode: difference;
 }
 
@@ -385,16 +391,24 @@ main {
     display: flex;
     width: 100%;
     flex-direction: column;
-    gap: 3vw;
     margin-top: 9vw;
+
 }
 
 .font16 {
     color: #F0F0F0;
     width: 100%;
-    max-width: 450px;
+    max-width: 2400px;
+    font-size: 4vw;
+    border-bottom: 2px solid #F0F0F0;
 }
-
+.font17 {
+    padding-top: 70px;
+    color: #F0F0F0;
+    width: 100%;
+    max-width: 1450px;
+    font-size: 18px;
+}
 .fotoRuben {
     padding-top: 90px;
     width: 38%;
@@ -402,11 +416,13 @@ main {
     filter: grayscale(100%);
     -webkit-transition: .3s ease-in-out;
     transition: .3s ease-in-out;
+    transform-origin: center center;
 }
 
 .fotoRuben:hover {
     -webkit-filter: grayscale(0);
     filter: grayscale(0);
+    transform: rotate(-5deg);
 }
 
 /* Responsive Styles */
