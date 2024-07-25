@@ -197,16 +197,22 @@ a {
     text-decoration: none;
 }
 .knop1 {
-    background-color: #1c1c1c;
+    background-color: #F0F0F0;
     width: 250px;
-    height: 40px;
+    height: 80px;
     border-radius: 0;
     border: 2px solid transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: #1c1c1c;
+    border: 2px solid #1c1c1c;
 }
 .knop1:hover {
-    background-color: #F0F0F0;
+    background-color: #1c1c1c;
     border: 2px solid #1c1c1c;
-    color: #1c1c1c;
+    color: #F0F0F0;
 }
 .pijl {
     padding-left: 10px;
@@ -248,13 +254,15 @@ a {
 }
 
 .bigTitel {
-    font-size: 8vw;
+    font-size: 9vw;
     line-height: 9rem;
     font-weight: 700;
     color: #1c1c1c;
     margin-bottom: 1.5rem ;
+    margin-top: 1.5rem;
     font-family: "Zen Dots", sans-serif;
 }
+
 @media (min-width: 2000px) {
    .bigTitel {
     padding-top: 65px;
@@ -279,12 +287,11 @@ a {
 }
 @media (min-width: 2000px) {
     .introTitel   {
-     padding-top: 100px;
+     padding-top: 160px;
     }
  }
 h3 {
     font-size: 250%;
-    line-height: 3.125rem;
     font-weight: 700;
     color: #1c1c1c;
     margin-bottom: 0.200rem ;
@@ -331,7 +338,7 @@ p {
 }
 @media (min-width: 2000px) {
     .paragraaf_banner  {
-     padding-bottom: 180px;
+     padding-bottom: 300px;
     }
  }
 .foto_ruben {
@@ -404,7 +411,7 @@ section {
     margin: auto;
     left: 0;
     right: 0;
-    bottom: .02em;
+    bottom: 2em;
     border-radius: 3em;
     margin-bottom: 30px;
   }
