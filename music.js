@@ -138,3 +138,5 @@ volumeBtn.addEventListener('click', () => {
 volumeSlider.addEventListener('input', () => {
     music.volume = volumeSlider.value;
 })
+
+

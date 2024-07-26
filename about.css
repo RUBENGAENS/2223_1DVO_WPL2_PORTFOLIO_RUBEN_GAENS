@@ -500,5 +500,6 @@ main {
     transition: .3s ease-in-out;
 }
 .diploma:hover {
-    border-radius: 30px;
+    border-radius: 20px;
+    transform: rotate(-5deg);
 }
