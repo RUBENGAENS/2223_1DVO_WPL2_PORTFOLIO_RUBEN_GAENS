@@ -211,7 +211,7 @@ a:hover {
 
 .project-card img {
     width: 100%;
-    transition: all .5s ease 0s;
+    transition: all .2s ease 0s;
 }
 
 .project-card h2 {
@@ -229,7 +229,7 @@ a:hover {
 }
 
 .project-card img:hover {
-    transform: scale(0.95);
+    transform: scale(0.97);
     cursor: url('assets/cursorHover.svg'), auto;
     border-radius: 15px;
 }

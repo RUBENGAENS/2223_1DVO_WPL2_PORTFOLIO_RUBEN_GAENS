@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Portfolio Ruben Gaens</title>
+    <title>Ruben Gaens - Fetch</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/x-icon" href="assets/logo_ruben_win.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -16,12 +16,14 @@
     <link rel="stylesheet" href="fetch.css">
     <script defer src="main.js"></script>
 
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
 </head>
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="90">
    
     <header class="header_wrapper">
-        <nav class="navbar">
+        <nav class="navbar" data-aos="fade-down" data-aos-duration="800" data-aos-delay="400">
             <a class="navbar-brand" href="index.html">
                 <img src="assets/logo_ruben_win.png" class="logo_hover" alt="logo">
                 <div class="animated-text">
@@ -41,9 +43,9 @@
     <!-- Overlay -->
     <div id="myNav" class="overlay">
         <div class="overlay-content">
-            <a href="/src/index.html">Projects</a>
-            <a href="wpl2.html">About</a>
-            <a href="wpl3.html">Contact</a>
+            <a href="index.html">HOME</a>
+            <a href="projects.html">PROJECTS</a>
+            <a href="about.html">ABOUT</a>
         </div>
     </div>
 
@@ -51,13 +53,13 @@
             <!-- Eerste rij --> 
             <div class="spaceing mb-5">
                 <div class="titelCase mt-5 pt-3">
-                    <h2 class="text-uppercase">Fetch</h2>
+                    <h2 class="text-uppercase" data-aos="fade-up" data-aos-duration="800">Fetch</h2>
                 </div>
         </div>
-            <img src="assets/fetch_mockup2.png" class="img-fluid w-100" alt="foto">
+            <img src="assets/fetch_mockup2.png" class="img-fluid w-100" data-aos="zoom-in" data-aos-duration="800" alt="foto">
 
-            <div class="line3 spaceing pt-3"></div>
-            <div class="d-flex projectContainer">
+            <div class="line3 spaceing pt-3" data-aos="zoom-in" data-aos-duration="800"></div>
+            <div class="d-flex projectContainer" data-aos="fade-up" data-aos-duration="800">
                 <img src="assets/section.png" class="size_logo" alt="logo">
                 <p class="text_head">Introduction</p>
             </div>
@@ -65,11 +67,11 @@
             <div class="projectContainer">
                 <div class="row mb-5 pb-5">
                     <div class="col-lg-6 col-sm-6 spatie">
-                        <h5 class="eindreflectie_tekst mb-5">
+                        <h5 class="eindreflectie_tekst mb-5" data-aos="fade-right" data-aos-duration="800">
                             Fetch is an online booking platform where you can book animal accommodation quickly and efficiently. Think for example of a Booking.com for pets.
                         </h5>
                     </div>
-                    <div class="col-lg-6 col-sm-6 spatie">
+                    <div class="col-lg-6 col-sm-6 spatie" data-aos="fade-left" data-aos-duration="800">
                         <h5>Background</h5>
                         <h6>
                             Fetch aims to make it easy for owners to find reliable and suitable
@@ -85,19 +87,19 @@
             </div>
 
 
-            <img src="assets/fetch research.png" class="img-fluid w-100 mt-5 pb-3 fotoMock" alt="foto">
-            <img src="assets/fetch personas.png" class="img-fluid w-100 mt-5 pb-5 fotoMock" alt="foto">
-            <img src="assets/research.png" class="img-fluid w-100 mt-5 pb-3 pt-5 fotoMock" alt="foto">
+            <img src="assets/fetch research.png" class="img-fluid w-100 mt-5 pb-3 fotoMock" alt="foto" data-aos="zoom-in" data-aos-duration="800">
+            <img src="assets/fetch personas.png" class="img-fluid w-100 mt-5 pb-5 fotoMock" alt="foto" data-aos="zoom-in" data-aos-duration="800">
+            <img src="assets/research.png" class="img-fluid w-100 mt-5 pb-3 pt-5 fotoMock" alt="foto" data-aos="zoom-in" data-aos-duration="800">
 
            
-            <div class="line3 spaceing pt-3"></div>
-            <div class="projectContainer d-flex">
+            <div class="line3 spaceing pt-3" data-aos="zoom-in" data-aos-duration="800"></div>
+            <div class="projectContainer d-flex" data-aos="fade-up" data-aos-duration="800">
                 <img src="assets/section.png" class="size_logo" alt="logo">
                 <p class="text_head">Demo Video Fetch</p>
             </div>
 
-            <div class="pb-5">
-                    <div class="video-container">
+            <div class="pb-5 mb-5" data-aos="zoom-in" data-aos-duration="800">
+                    <div class="video-container pb-5">
                       <video autoplay muted loop>
                         <source src="assets/demoFetch.mov" type="video/mp4">
                         <source src="assets/demoFetch.mov" type="video/ogg">
@@ -111,6 +113,18 @@
             
             </section>
 
+                <div class="nextCase">
+                    <a href="ontwerpen.html">
+                    <p class="textCase">Next Case<i class="fas fa-arrow-right pijl ml-2"></i></p>
+                </a>
+                </div>
+    
+
+            <script>
+    AOS.init({
+                once: true 
+            });
+</script>
 
 
             <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"

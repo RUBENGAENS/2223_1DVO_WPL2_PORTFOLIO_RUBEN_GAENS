@@ -174,8 +174,8 @@ a {
 }
 
 .logo_hover:hover {
-    transform: scale(1.2);
-    transition: transform .5s;
+    transform: rotate(-1080deg);
+    transition: transform 1s;
 }
 
 .size_logo {
@@ -217,62 +217,19 @@ a {
 .pijl {
     padding-left: 10px;
 }
-.main-btn {
-    display: inline-block;
-    font-weight: 500;
-    font-size: 0.975rem;
-    text-align: center;
-    cursor: pointer;
-    text-transform: uppercase;
-    border: 0.125rem transparent;
-    padding: 10px 2rem;
-    transition: all .2s ease-in-out;
-    --webkit-transition: all .2s ease-in-out;
-}
-.primary-btn {
-    background-color: #98A68F;
-    color: #F0F0F0;
-    box-shadow: 0 0 30px rgba(152, 166, 143, 0.2);
-    font-family: "Zen Dots", sans-serif;
-}
-.primary-btn:hover{
-    border-color: #98A68F;
-    background: #F0F0F0;
-    color: #98A68F;
-    box-shadow: none;
-}
-.secondary-btn {
-    border: 2px solid #1c1c1c;
-    color: #1c1c1c;
-    font-family: "Zen Dots", sans-serif;
-}
-.secondary-btn:hover {
-    border: 2px solid transparent;
-    color: #F0F0F0;
-    background-color: #1c1c1c;
-    box-shadow: none;
-}
+
 
 .bigTitel {
     font-size: 9vw;
-    line-height: 9rem;
     font-weight: 700;
     color: #1c1c1c;
     margin-bottom: 1.5rem ;
-    margin-top: 1.5rem;
     font-family: "Zen Dots", sans-serif;
 }
 
-@media (min-width: 2000px) {
-   .bigTitel {
-    padding-top: 65px;
-    padding-bottom: 40px;
-   }
-}
+
 .introTitel {
-    padding-bottom: 0.5rem;
     font-size: 7vw;
-    line-height: 3.75rem;
     font-weight: 500;
     color: #1c1c1c;
     font-family: "Zen Dots", sans-serif;
@@ -280,14 +237,13 @@ a {
 .contactText {
     padding-bottom: 0.5rem;
     font-size: 4vw;
-    line-height: 3.75rem;
     font-weight: 500;
     color: #1c1c1c;
     font-family: "Zen Dots", sans-serif;
 }
 @media (min-width: 2000px) {
     .introTitel   {
-     padding-top: 160px;
+     padding-top: 80px;
     }
  }
 h3 {
@@ -338,7 +294,7 @@ p {
 }
 @media (min-width: 2000px) {
     .paragraaf_banner  {
-     padding-bottom: 300px;
+     padding-bottom: 260px;
     }
  }
 .foto_ruben {
@@ -348,7 +304,7 @@ p {
 .banner_wrapper {
     padding-left: 4vw;
     padding-right: 4vw;
-    padding-top: 11rem;
+    padding-top: 8rem;
     z-index: 1;
     width: 100%;
 }
@@ -590,12 +546,20 @@ span.color_end {
     height: 100%;
   }
 /* Mediaquery's*/
+
+@media (max-width: 1450px) {
+    .textProject {
+        font-size: 1.2rem;
+    }
+}
 @media (max-width: 1278px) {
     .line3::before {
         width: 100%;
     }
+   
 }
 @media (max-width: 1399px) {
+
     .verticale_line::before {
         display: none;
     }
@@ -615,7 +579,7 @@ span.color_end {
 }
 @media (max-width: 975px) {
     .social-link {
-        padding: 15px;
+        padding: 28px;
     }
     a#scroll-btn {
         bottom: 2em;
@@ -665,6 +629,25 @@ span.color_end {
         font-size: 1.5625rem;
         text-align: center;
     }
+    .projectTitel, .projectTitel2 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    .textProject {
+        font-size: 1rem;
+        text-align: center;
+    }
+    .centerButton {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .contactText {
+        font-size: 2rem;
+    }
+    .text-section {
+        padding: 0;
+    }
     h5 {
         font-size: 1.5625rem;
         text-align: center;
@@ -686,9 +669,6 @@ span.color_end {
     .footer-text {
         padding-top: 20px; 
     }
-    .social-link {
-        padding: 10px;
-    }
     .linkedin {
         border-top: none;
     }
@@ -697,7 +677,7 @@ span.color_end {
     }
     .banner_wrapper {
         padding-top: 5rem;
-        height: 600px;
+        height: 450px;
     }
     a#scroll-btn {
         bottom: 2em;
@@ -727,7 +707,14 @@ span.color_end {
 }
 @media (max-width: 574px) {
     .container-md {
-        padding-right: 20px; /* Voeg rechts padding toe aan de container */
-        padding-left: 20px;  /* Voeg links padding toe aan de container */
+        padding-right: 20px; 
+        padding-left: 20px;  
+    }
+    .projectContainer {
+        padding-right: 20px; 
+        padding-left: 20px;  
+    }
+    .overlay a {
+        font-size: 2rem;
     }
 }

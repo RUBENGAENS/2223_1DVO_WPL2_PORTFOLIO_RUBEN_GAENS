@@ -18,12 +18,15 @@
     <script defer src="main.js"></script>
 
 <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   
 </head>
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="90">
 
     <header class="header_wrapper">
-        <nav class="navbar">
+        <nav class="navbar" data-aos="fade-down" data-aos-duration="800" data-aos-delay="400">
             <a class="navbar-brand" href="index.html">
                 <img src="assets/logo_ruben_win.png" class="logo_hover" alt="logo">
                 <div class="animated-text">
@@ -51,18 +54,19 @@
 
 
 <section id="home" class="banner_wrapper">
-                <h2 class="position-relative text-md introTitel">Hello, I am</h2>
-                <h1 class="text-uppercase bigTitel">Ruben Gaens</h1>
-                <h5 class="text-uppercase text-sm titelText">A Digital Designer based in Belgium</h5>
-                <p class="paragraaf_banner">Welcome to my PORTFOLIO</p>
-               <div class="srolling">
-                <a id="scroll-btn"></a>
-               </div>
+    
+                <h2 class="position-relative text-md introTitel" data-aos="fade-down" data-aos-duration="800">Hello, I am</h2>
+                <h1 class="text-uppercase bigTitel" data-aos="fade-down" data-aos-duration="800">Ruben Gaens</h1>
+                <h5 class="text-uppercase text-sm titelText" data-aos="fade-up" data-aos-duration="800">A Digital Designer based in Belgium</h5>
+                <p class="paragraaf_banner" data-aos="fade-up" data-aos-duration="800">Welcome to my PORTFOLIO</p>
+                <div class="srolling">
+                    <a id="scroll-btn"></a>
+                   </div>
 </section>
 
 
-<div class="line3"></div>
-<div class="d-flex projectContainer">
+<div class="line3" data-aos="zoom-in" data-aos-duration="800"></div>
+<div class="d-flex projectContainer" data-aos="fade-up" data-aos-duration="800">
     <img src="assets/section.png" class="size_logo" alt="logo">
     <p class="text_head">Project_01</p>
 </div>
@@ -70,13 +74,15 @@
 <div class="projectContainer">
     <div class="row">
         <div class="col-md-5 d-flex align-items-center pb-5">
-            <div class="text-section">
+            <div class="text-section" data-aos="fade-right" data-aos-duration="800">
                 <h4 class="projectTitel">UX/UI Project</h4>
                 <p class="pb-5 textProject"> For a school project, I and three fellow students did a UX and UI project on an online hotel booking site for pets. The name of our project was Fetch.</p>
-                <a href="fetch.html" class="btn btn-primary knop1">Read More<i class="fas fa-arrow-right pijl"></i></a>
+                <div class="centerButton">
+                <a href="fetch.html" class="knop1">Read More<i class="fas fa-arrow-right pijl"></i></a>
+            </div>
             </div>
         </div>
-        <div class="col-12 col-md-7 pb-5">
+        <div class="col-12 col-md-7 pb-5" data-aos="fade-left" data-aos="fade-up" data-aos-duration="800">
             <div class="verticale_line"> 
                 <a href="fetch.html">
             <img src="assets/fetch_mockup.png" alt="Foto" class="img-fluid foto_case">
@@ -87,9 +93,8 @@
 </div>
 <div class="tussenstuk"></div>
 
-
-<div class="line3"></div>
-<div class="projectContainer d-flex">
+<div class="line3" data-aos="zoom-in" data-aos-duration="800"></div>
+<div class="projectContainer d-flex" data-aos="fade-up" data-aos-duration="800">
     <img src="assets/section.png" class="size_logo" alt="logo">
     <p class="text_head">Project_02</p>
 </div>
@@ -97,14 +102,16 @@
 <div class="projectContainer">
     <div class="row">
         <div class="col-md-5 d-flex align-items-center pb-5">
-            <div class="text-section">
+            <div class="text-section" data-aos="fade-right" data-aos-duration="800">
                 <h4 class="projectTitel">Designs</h4>
                 <p class="pb-5 textProject">
                     In my spare time, I am busy creating various designs ranging from posters and album covers to unique logos and much more. I am constantly looking for ways to develop my creativity.</p>
+                    <div class="centerButton">
                     <a href="ontwerpen.html" class="btn btn-primary knop1">Read More<i class="fas fa-arrow-right pijl"></i></a>
+                    </div>
             </div>
         </div>
-        <div class="col-md-7 pb-5">
+        <div class="col-md-7 pb-5" data-aos="fade-left" data-aos-duration="800">
             <div class="verticale_line"> 
                 <a href="ontwerpen.html">
                     <img src="assets/design_foto.jpg" alt="Foto" class="img-fluid foto_case">
@@ -116,8 +123,8 @@
 </div>
 <div class="tussenstuk"></div>
 
-<div class="line3"></div>
-<div class="projectContainer d-flex">
+<div class="line3" data-aos="zoom-in" data-aos-duration="800"></div>
+<div class="projectContainer d-flex" data-aos="fade-up" data-aos-duration="800">
     <img src="assets/section.png" class="size_logo" alt="logo">
     <p class="text_head">Project_03</p>
 </div>
@@ -125,15 +132,17 @@
 <div class="projectContainer">
     <div class="row">
         <div class="col-md-5 d-flex align-items-center pb-5">
-            <div class="text-section">
+            <div class="text-section" data-aos="fade-right" data-aos-duration="800">
                 <h4 class="projectTitel">Motion Designs</h4>
                 <p class="pb-5 textProject">
                     Both in my spare time and as part of my school projects, I have created several motion designs. My affinity for motion design has grown into a true passion, as it has opened up a completely new world for me. The process of moving images and animated elements fascinates me, and it provides a creative outlet that allows me to express my vision in a dynamic way.
                 </p>
+                <div class="centerButton">
                 <a href="motion.html" class="btn btn-primary knop1">Read More<i class="fas fa-arrow-right pijl"></i></a>
+                </div>
             </div>
         </div>
-        <div class="col-md-7 pb-5">
+        <div class="col-md-7 pb-5" data-aos="fade-left" data-aos-duration="800">
             <div class="verticale_line"> 
                 <a href="motion.html">
                     <img src="assets/motionBackground.png" alt="Foto" class="img-fluid foto_case">
@@ -148,12 +157,12 @@
     <div class="container-md">
         <div class="row">
             <div class="col-sm-12 text-center mb-3">
-                <h5 class="pb-4 projectTitel2">See more projects I have worked on by pressing the button below
+                <h5 class="pb-4 projectTitel2" data-aos="fade-down" data-aos-duration="800">See more projects I have worked on by pressing the button below
                 </h5>
                 <div class="container">
                     <div class="row justify-content-center pb-5">
-                        <div class="col-auto">
-                            <a href="projects.html" class="btn btn-primary knop1">More projects<i class="fas fa-arrow-right pijl ml-2"></i></a>
+                        <div class="col-auto" data-aos="fade-up" data-aos-duration="800">
+                            <a href="projects.html" class="knop1" >More projects<i class="fas fa-arrow-right pijl ml-2"></i></a>
                         </div>
                     </div>
                 </div>
@@ -165,29 +174,31 @@
 <div class="tussenstuk"></div>
 
 
-        <div class="line3"></div>
-        <div class="projectContainer d-flex justify-content-start">
+        <div class="line3" data-aos="zoom-in" data-aos-duration="800"></div>
+        <div class="projectContainer d-flex justify-content-start" data-aos="fade-up" data-aos-duration="800">
             <img src="assets/section.png" class="size_logo" alt="logo">
             <p class="text_head2">About</p>
         </div>
 
 <section id="about" class="about_wrapper">
     
-            <div class="img-hover-zoom">
+            <div class="img-hover-zoom" data-aos="fade-right" data-aos-duration="800">
                 <img src="assets/foto_rubenGaens.jpeg" class="eigenfoto" alt="foto ruben">
              </div>
          
                 
          
-            <div class="textAbout">
+            <div class="textAbout" data-aos="fade-left" data-aos-duration="800">
                 <h3 class="pt-5 projectTitel">Let Me <br> Introduce <br> Myself</h3>
                 <p class="pt-5 textProject">My name is Ruben Gaens. I am 24 years old and live in Alken. I have a good relationship with others and am resilient, flexible and multifunctional. Furthermore, I am rather assertive, with a positive attitude and a lot of motivation, so I do not shy away from a challenge.</p>
                 <p class="textProject">I need variety and room for creativity in my work in order to be goal-oriented and passionate. I am driven to tackle and finish something.</p>
                 <p class="textProject">I love going to festivals and travelling all over the world. I just got back from Thailand :) What I also enjoy is making different dishes and experimenting with different ingredients.</p>
-                    <div class="text-center pt-3">
+                    <div class="text-center pt-3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                        <div class="centerButton">
                         <a href="about.html"
                            class="btn btn-primary knop1 mt-4 text-center">More about me
                         </a>
+                        </div>
                     </div>
             </div>
             
@@ -196,8 +207,8 @@
 
 
 
-<div class="line3"></div>
-<div class="projectContainer d-flex justify-content-start">
+<div class="line3" data-aos="zoom-in" data-aos-duration="800"></div>
+<div class="projectContainer d-flex justify-content-start" data-aos="fade-up" data-aos-duration="800">
     <img src="assets/section.png" class="size_logo" alt="logo">
     <p class="text_head">Interesses</p>
 </div>
@@ -206,15 +217,15 @@
     <div class="container-md">
         <div class="row">
             <div class="col-sm-12 text-center mb-3">
-                <h5 class="pb-5 projectTitel">In my spare time, I like to be involved in music. Both listening and playing various instruments.
+                <h5 class="pb-5 projectTitel" data-aos="fade-down" data-aos-duration="800">In my spare time, I like to be involved in music. Both listening and playing various instruments.
                 </h5>
-                <p>Swipe to see more pictures <i class="fas fa-arrow-right"></i></p>
+                <p data-aos="fade-right" data-aos-duration="800">Swipe to see more pictures <i class="fas fa-arrow-right"></i></p>
             </div> 
         </div>
     </div>
 </section>
 
-<div class="scroll-doos">
+<div class="scroll-doos" data-aos="fade-right" data-aos-duration="800">
     <img src="https://images.unsplash.com/photo-1564186763535-ebb21ef5277f?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="fotos img-fluid" alt="foto1" width="900" height="600">
     <img src="https://images.unsplash.com/photo-1461784121038-f088ca1e7714?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="fotos img-fluid" alt="foto2" width="900" height="600">
     <img src="https://images.unsplash.com/photo-1603090429922-0c4cf6f3638f?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c3ludGhlc2l6ZXJ8ZW58MHwwfDB8fHww" class="fotos img-fluid" alt="foto3" width="900" height="600">
@@ -224,7 +235,7 @@
 
 
 
-   <div class="container">
+   <div class="container" data-aos="fade-up" data-aos-duration="800">
         <div class="row justify-content-center pb-5">
             <div class="col-auto">
                 <a href="music.html" class="btn btn-primary knop1">Music Player<i class="fas fa-arrow-right pijl ml-2"></i></a>
@@ -232,8 +243,8 @@
         </div>
     </div>
 
-<div class="line3 pt-5"></div>
-<div class="projectContainer d-flex justify-content-start">
+<div class="line3 pt-5" data-aos="zoom-in" data-aos-duration="800"></div>
+<div class="projectContainer d-flex justify-content-start" data-aos="fade-up" data-aos-duration="800">
     <img src="assets/section.png" class="size_logo" alt="logo">
     <p class="text_head">Contact</p>
 </div>
@@ -241,14 +252,14 @@
 
 <footer class="footer">
     <div class="projectContainer">
-                <div class="contact">
+                <div class="contact" data-aos="fade-right" data-aos-duration="800">
                     <h2 class="contactText pt-5">Get in touch</h2>
                     <a href="mailto:rubengaens@hotmail.com" class="email">rubengaens@hotmail.com</a>
                 </div>
     </div>
 
 
-<div class="pt-5 pb-5 socials">
+<div class="pt-5 pb-5 socials" data-aos="fade-down" data-aos-duration="800">
     <div class="row pt-3"> 
       
         <div class="col-lg-4 col-md-6">
@@ -274,7 +285,7 @@
 
     <div class="container mb-5 pt-5">
         <div class="row align-items-center justify-content-center">
-    <div class="col-lg-8 col-sm-12">
+    <div class="col-lg-8 col-sm-12" data-aos="fade-up" data-aos-duration="800">
         <p class="footer-text text-center my-2">This is a portfolio created by <span class="color_end">Ruben Gaens
             </span> and is fully self-coded
             <br> Copyright ©</p>
@@ -283,7 +294,11 @@
     </div>
 </footer>
  
-
+<script>
+    AOS.init({
+                once: true 
+            });
+</script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
         integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
         crossorigin="anonymous"></script>
