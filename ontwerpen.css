@@ -8,6 +8,10 @@ body {
     width: 100%;
     background-color: #F0F0F0;
     background-size: cover;
+    overflow-x: hidden;
+}
+html {
+    overflow-x: hidden;
 }
 .projectContainer {
     padding-left: 4vw;
@@ -370,4 +374,11 @@ a {
     margin: 0;
     font-family: "Zen Dots", sans-serif;
     font-size: 22px;
+}
+
+
+@media (max-width: 574px) {
+    .overlay a {
+        font-size: 2rem;
+    }
 }

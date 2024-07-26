@@ -8,6 +8,10 @@ body {
     width: 100%;
     background-color: #F0F0F0;
     background-size: cover;
+    overflow-x: hidden;
+}
+html {
+    overflow-x: hidden;
 }
 .titelCase {
     padding-left: 4vw;
@@ -222,9 +226,10 @@ a {
 }
 
 .logo_hover:hover {
-    transform: scale(1.2);
-    transition: transform .5s;
+    transform: rotate(-1080deg);
+    transition: transform 1s;
 }
+
 
 .size_logo {
     width: 20px;
@@ -307,7 +312,7 @@ a {
         width: 80%;
       }
       h2 {
-        font-size: 1.875rem;
+        font-size: 2rem;
     }
 }
 @media (max-width: 991px) {
@@ -345,4 +350,31 @@ a {
         font-size: 200%;
     }
 
+}
+
+
+.nextCase {
+    border-top: 2px solid #1c1c1c;
+    cursor: pointer;
+    transition: .2s;
+}
+.nextCase:hover {
+    background-color: #f15a2a;
+}
+.textCase {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 50px;
+    padding-right: 150px;
+    margin: 0;
+    font-family: "Zen Dots", sans-serif;
+    font-size: 22px;
+}
+
+
+@media (max-width: 574px) {
+    .overlay a {
+        font-size: 2rem;
+    }
 }
