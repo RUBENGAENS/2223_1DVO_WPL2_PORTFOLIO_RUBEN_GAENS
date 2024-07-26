@@ -8,6 +8,10 @@ body {
     width: 100%;
     background-color: #F0F0F0;
     background-size: cover;
+    overflow-x: hidden;
+}
+html {
+    overflow-x: hidden;
 }
 .projectContainer {
     padding-left: 4vw;
@@ -20,7 +24,7 @@ body {
 .video-container {
     position: relative;
     overflow: hidden;
-    padding-top: 56.25%; /* 16:9 aspect ratio */
+    padding-top: 56.25%; 
   }
 
   .video-container video {
@@ -241,10 +245,9 @@ a {
 }
 
 .logo_hover:hover {
-    transform: scale(1.2);
-    transition: transform .5s;
+    transform: rotate(-1080deg);
+    transition: transform 1s;
 }
-
 .size_logo {
     width: 20px;
     height: 20px;
@@ -258,16 +261,23 @@ a {
     margin-top: 100px;
 }
 .knop1 {
-    background-color: #1c1c1c;
+    background-color: #F0F0F0;
     width: 250px;
-    height: 40px;
+    height: 80px;
     border-radius: 0;
     border: 2px solid transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: #1c1c1c;
+    border: 2px solid #1c1c1c;
+    transition: 0.2s;
 }
 .knop1:hover {
-    background-color: #F0F0F0;
+    background-color: #1c1c1c;
     border: 2px solid #1c1c1c;
-    color: #1c1c1c;
+    color: #F0F0F0;
 }
 
 
@@ -336,6 +346,10 @@ a {
       h2 {
         font-size: 1.875rem;
     }
+    .projectTitel2 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
 }
 @media (max-width: 991px) {
     .header_wrapper .navbar-collapse {
@@ -372,4 +386,31 @@ a {
         font-size: 200%;
     }
 
+}
+
+
+.nextCase {
+    border-top: 2px solid #1c1c1c;
+    cursor: pointer;
+    transition: .2s;
+}
+.nextCase:hover {
+    background-color: #f15a2a;
+}
+.textCase {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 50px;
+    padding-right: 150px;
+    margin: 0;
+    font-family: "Zen Dots", sans-serif;
+    font-size: 22px;
+}
+
+
+@media (max-width: 574px) {
+    .overlay a {
+        font-size: 2rem;
+    }
 }
