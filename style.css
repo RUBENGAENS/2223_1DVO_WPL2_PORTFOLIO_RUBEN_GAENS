@@ -305,7 +305,7 @@ p {
 .banner_wrapper {
     padding-left: 4vw;
     padding-right: 4vw;
-    padding-top: 8rem;
+    padding-top: 10rem;
     z-index: 1;
     width: 100%;
 }
@@ -527,6 +527,7 @@ div.scroll-doos img {
     font-size: 0.7rem;
     line-height: 1.25rem;
     font-weight: 600;
+    
 }
 span.color_end {
     color: #f15a2a;
@@ -612,6 +613,7 @@ span.color_end {
     }
     .footer-text {
         padding-top: 30px; 
+
     }
 }
 @media (max-width: 767px) {
@@ -670,6 +672,7 @@ span.color_end {
 
     .footer-text {
         padding-top: 20px; 
+        font-size: 0.6rem;
     }
     .linkedin {
         border-top: none;
