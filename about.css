@@ -242,6 +242,7 @@ a {
 
 
 .knop1 {
+    transition: .2s;
     background-color: #1c1c1c;
     width: 250px;
     height: 80px;
