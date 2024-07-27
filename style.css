@@ -467,10 +467,18 @@ div.scroll-doos img {
     transition: all .5s ease 0s;
 }
 .foto_case:hover {
-    border-radius: 30px;
+    transform: scale(1.05);
     cursor: url('assets/cursorHover.svg'), auto;
+    border-radius: 20px;
+}
+.img-wrapper {
+    overflow: hidden;
+    transition: all .4s;
 }
 
+.img-wrapper:hover {
+    border-radius: 20px;
+}
 .contact {
   padding-top: 40px;
   padding-bottom: 60px;
@@ -723,3 +731,4 @@ span.color_end {
         font-size: 2rem;
     }
 }
+
