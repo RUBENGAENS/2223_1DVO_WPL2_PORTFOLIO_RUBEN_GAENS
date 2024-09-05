@@ -288,49 +288,6 @@ a {
   .spatie {
     padding-right: 86px;
   }
-  /* Mediaquery's*/
-@media (max-width: 1278px) {
-    .line3::before {
-        width: 100%;
-    }
-}
-@media (max-width: 990px) {
-      h2 {
-        font-size: 3.5rem;
-    }
-    .font16 {
-        font-size: 2rem;
-    }
-}
-  @media (max-width: 767px) {
-    .line::before, .line3::before, .line2::before {
-        width: 80%;
-      }
-      h2 {
-        font-size: 1.875rem;
-    }
-}
-@media (max-width: 991px) {
-    .header_wrapper .navbar-collapse {
-        margin-top: -0.125rem;
-    }
-    .header_wrapper .menu-navbar-nav {
-        text-align: center;
-        padding-bottom: 0.9375rem;
-    }
-    .header_wrapper .nav-item .nav-link {
-        margin-top: 0.9375rem;
-    }
-    .facebook {
-        border-top: none;
-    }
-}
-@media (max-width: 768px) {
-    h5 {
-        font-size: 200%;
-    }
-
-}
 .video-container {
     position: relative;
     overflow: hidden;
@@ -399,16 +356,16 @@ main {
     display: flex;
     width: 100%;
     flex-direction: column;
-    margin-top: 9vw;
+    margin-top: 12vw;
 
 }
 
 .font16 {
-     font-family: "Zen Dots", sans-serif;
+    font-family: "Zen Dots", sans-serif;
     color: #F0F0F0;
     width: 100%;
     max-width: 2400px;
-    font-size: 2.5vw;
+    font-size: 3vw;
     border-bottom: 2px solid #F0F0F0;
 }
 .font17 {
@@ -531,4 +488,48 @@ main {
 
 .textWidth {
     max-width: 45%;
+}
+
+ /* Mediaquery's*/
+ @media (max-width: 1278px) {
+    .line3::before {
+        width: 100%;
+    }
+}
+@media (max-width: 990px) {
+      h2 {
+        font-size: 3.5rem;
+    }
+    .font16 {
+        font-size: 2rem;
+    }
+}
+  @media (max-width: 767px) {
+    .line::before, .line3::before, .line2::before {
+        width: 80%;
+      }
+      h2 {
+        font-size: 1.875rem;
+    }
+}
+@media (max-width: 991px) {
+    .header_wrapper .navbar-collapse {
+        margin-top: -0.125rem;
+    }
+    .header_wrapper .menu-navbar-nav {
+        text-align: center;
+        padding-bottom: 0.9375rem;
+    }
+    .header_wrapper .nav-item .nav-link {
+        margin-top: 0.9375rem;
+    }
+    .facebook {
+        border-top: none;
+    }
+}
+@media (max-width: 768px) {
+    h5 {
+        font-size: 200%;
+    }
+
 }
