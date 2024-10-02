@@ -14,8 +14,8 @@ html {
     overflow-x: hidden;
 }
 .titelCase {
-    padding-left: 4vw;
-    padding-right: 4vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
 }
 h1 {
     font-size: 800%;
@@ -108,7 +108,7 @@ p {
     position: relative;
     top: 25%;
     width: 100%;
-    text-align: center;
+    text-align: end;
 }
 
 .overlay a {
@@ -142,8 +142,8 @@ p {
     padding: 0;
     width: 100%;
     border-bottom: 2px solid #000000;
-    padding-left: 4vw;
-    padding-right: 4vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
 }
 
 .navbar-brand {
@@ -195,8 +195,8 @@ p {
     animation: anim 15s infinite;
 }
 .projectContainer {
-    padding-left: 4vw;
-    padding-right: 4vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
 }
 
 @keyframes anim {
@@ -273,7 +273,7 @@ a {
     bottom: 0;
     left: 50%; 
     transform: translateX(-50%); 
-    width: 92%; 
+    width: 96%; 
     height: 2px; 
     background-color: #000000;
   }
@@ -376,5 +376,10 @@ a {
 @media (max-width: 574px) {
     .overlay a {
         font-size: 2rem;
+    }
+}
+@media (max-width: 574px) {
+    .overlay-content {
+        text-align: center;
     }
 }
