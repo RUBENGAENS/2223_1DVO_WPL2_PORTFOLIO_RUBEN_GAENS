@@ -14,8 +14,8 @@ html {
     overflow-x: hidden;
 }
 .projectContainer {
-    padding-left: 4vw;
-    padding-right: 4vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
 }
 .videos {
     display: flex;
@@ -111,17 +111,15 @@ p {
 
 .projects-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-    padding-left: 3vw;
-    padding-right: 3vw;
     row-gap: 1rem;
 }
 
 .project-card {
     margin: 5px;
     text-align: start;
-    width: calc(50% - 40px); 
+    width: calc(50% - 40px);
     overflow: hidden; 
 }
 
@@ -156,7 +154,7 @@ p {
     position: relative;
     top: 25%;
     width: 100%;
-    text-align: center;
+    text-align: end;
 }
 
 .overlay a {
@@ -190,8 +188,8 @@ p {
     padding: 0;
     width: 100%;
     border-bottom: 2px solid #000000;
-    padding-left: 4vw;
-    padding-right: 4vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
 }
 
 .navbar-brand {
@@ -243,8 +241,8 @@ p {
     animation: anim 15s infinite;
 }
 .projectContainer {
-    padding-left: 4vw;
-    padding-right: 4vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
 }
 
 @keyframes anim {
@@ -284,8 +282,8 @@ a {
 }
 
 .titelCase {
-    padding-left: 4vw;
-    padding-right: 4vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
 }
 .spaceing {
     margin-top: 100px;
@@ -330,7 +328,7 @@ a {
     bottom: 0;
     left: 50%; 
     transform: translateX(-50%); 
-    width: 92%; 
+    width: 96%; 
     height: 2px; 
     background-color: #000000;
   }
@@ -443,8 +441,14 @@ a {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 668px) {
     .project-card {
         width: calc(100% - 40px);
+    }
+}
+
+@media (max-width: 574px) {
+    .overlay-content {
+        text-align: center;
     }
 }

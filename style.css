@@ -56,7 +56,7 @@ body {
     position: relative;
     top: 25%;
     width: 100%;
-    text-align: center;
+    text-align: end;
 }
 
 .overlay a {
@@ -67,8 +67,8 @@ body {
     color: #000000;
     display: block;
     transition: 0.2s;
-    padding-left: 4vw;
-    padding-right: 4vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
 }
 
 .overlay a:hover,
@@ -90,8 +90,8 @@ body {
     padding: 0;
     width: 100%;
     border-bottom: 2px solid #000000;
-    padding-left: 4vw;
-    padding-right: 4vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
 }
 
 .navbar-brand {
@@ -143,10 +143,13 @@ body {
     animation: anim 15s infinite;
 }
 .projectContainer {
-    padding-left: 4vw;
-    padding-right: 4vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
 }
-
+.extraPadding{
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
 @keyframes anim {
     0%, 20% {
         margin-top: 0;
@@ -303,8 +306,8 @@ p {
     padding-top: 50px;
 }
 .banner_wrapper {
-    padding-left: 4vw;
-    padding-right: 4vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
     padding-top: 10rem;
     z-index: 1;
     width: 100%;
@@ -337,7 +340,7 @@ p {
     bottom: 0;
     left: 50%; 
     transform: translateX(-50%); 
-    width: 92%; 
+    width: 96%; 
     height: 2px; 
     background-color: #000000;
   }
@@ -730,5 +733,10 @@ span.color_end {
     .overlay a {
         font-size: 2rem;
     }
+   
 }
-
+@media (max-width: 574px) {
+    .overlay-content {
+        text-align: center;
+    }
+}
