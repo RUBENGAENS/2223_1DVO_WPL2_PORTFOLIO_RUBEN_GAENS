@@ -29,4 +29,22 @@ let songs = [
         artist: 'Tame Impala',
         cover: 'images/cover 5.png'
     },
+    {
+        name: 'Oino',
+        path: 'music/song6.mp3',
+        artist: 'LA Priest',
+        cover: 'images/cover 6.jpeg'
+    },
+    {
+        name: 'Bootleg Rascal',
+        path: 'music/song7.mp3',
+        artist: 'Sticky Fingers',
+        cover: 'images/cover 7.jpeg'
+    },
+    {
+        name: 'good day',
+        path: 'music/song8.mp3',
+        artist: 'blackwave.',
+        cover: 'images/cover 8.jpeg'
+    }
 ]
