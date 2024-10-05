@@ -71,7 +71,10 @@ p {
     background: none;
     border: none;
     cursor: pointer;
-    padding: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 0;
     position: relative;
     z-index: 1001; 
 }
@@ -117,14 +120,14 @@ p {
 
 .overlay a {
     font-family: "Zen Dots", sans-serif;
-    padding: 8px;
+    padding-bottom: 8px;
     text-decoration: none;
     font-size: 5vw;
     color: #000000;
     display: block;
     transition: 0.2s;
-    padding-left: 4vw;
-    padding-right: 4vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
 }
 
 .overlay a:hover,
@@ -203,6 +206,7 @@ p {
     padding-right: 2vw;
 }
 
+
 @keyframes anim {
     0%, 20% {
         margin-top: 0;
@@ -253,7 +257,7 @@ a {
     align-items: center;
     font-size: 18px;
     color: #F0F0F0;
-    border: 2px solid #F0F0F0;
+    border: 1px solid #F0F0F0;
 }
 .knop1:hover {
     background-color: #F0F0F0;
@@ -272,19 +276,35 @@ a {
 }
 .line3 {
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
-  
-.line3::before {
+  .line4 {
+    position: relative;
+  }
+.line3::before{
     content: '';
     position: absolute;
     bottom: 0;
     left: 50%; 
     transform: translateX(-50%); 
-    width: 92%; 
-    height: 2px; 
+    width: 96%; 
+    height: 1px; 
     background-color: #F0F0F0;
   }
+ .line4::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: 96%; 
+    height: 1px; 
+    background-color: #000000;
+  }
+  .text_head3 {
+    font-size: 2vw;
+    color: #000000;
+}
   .spatie {
     padding-right: 86px;
   }
@@ -366,7 +386,7 @@ main {
     width: 100%;
     max-width: 2400px;
     font-size: 3vw;
-    border-bottom: 2px solid #F0F0F0;
+    border-bottom: 1px solid #F0F0F0;
 }
 .font17 {
     padding-top: 70px;
@@ -391,6 +411,24 @@ main {
     transform: rotate(-5deg);
 }
 
+.nextCase {
+    border-top: 1px solid #ffffff;
+    cursor: pointer;
+    transition: .2s;
+}
+.nextCase:hover {
+    background-color: #f15a2a;
+}
+.textCase {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 50px;
+    padding-right: 150px;
+    margin: 0;
+    font-family: "Zen Dots", sans-serif;
+    font-size: 22px;
+}
 /* Responsive Styles */
 @media (max-width: 1024px) {
     .marquee__inner span {
@@ -492,7 +530,7 @@ main {
 
  /* Mediaquery's*/
  @media (max-width: 1278px) {
-    .line3::before {
+    .line3::before, .line4::before {
         width: 100%;
     }
 }
@@ -505,7 +543,14 @@ main {
     }
 }
   @media (max-width: 767px) {
-    .line::before, .line3::before, .line2::before {
+    .overlay a {
+        padding-right: 40px;
+    }
+    .text_head3 {
+        font-size: 1rem;
+        padding-left: 30px;
+    }
+    .line::before, .line3::before, .line2::before, .line4::before {
         width: 80%;
       }
       h2 {
@@ -532,9 +577,4 @@ main {
         font-size: 200%;
     }
 
-}
-@media (max-width: 574px) {
-    .overlay-content {
-        text-align: center;
-    }
 }

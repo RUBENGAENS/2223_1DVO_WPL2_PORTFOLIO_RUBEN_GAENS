@@ -86,7 +86,10 @@ p {
     background: none;
     border: none;
     cursor: pointer;
-    padding: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 0;
     position: relative;
     z-index: 1001; 
 }
@@ -132,14 +135,14 @@ p {
 
 .overlay a {
     font-family: "Zen Dots", sans-serif;
-    padding: 8px;
+    padding-bottom: 8px;
     text-decoration: none;
     font-size: 5vw;
     color: #000000;
     display: block;
     transition: 0.2s;
-    padding-left: 4vw;
-    padding-right: 4vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
 }
 
 .overlay a:hover,
@@ -271,7 +274,7 @@ a {
     align-items: center;
     font-size: 18px;
     color: #000000;
-    border: 2px solid #000000;
+    border: 1px solid #000000;
     transition: 0.2s;
 }
 .knop1:hover {
@@ -289,19 +292,25 @@ a {
     padding-left: 10px;
     padding-bottom: 80px;
 }
+.text_head3 {
+    font-size: 2vw;
+    color: #000000;
+}
 .line3 {
     position: relative;
     margin-bottom: 30px;
   }
-  
-.line3::before {
+  .line4 {
+    position: relative;
+  }  
+.line3::before, .line4::before  {
     content: '';
     position: absolute;
     bottom: 0;
     left: 50%; 
     transform: translateX(-50%); 
     width: 96%; 
-    height: 2px; 
+    height: 1px; 
     background-color: #000000;
   }
   .spatie {
@@ -330,7 +339,7 @@ a {
 
   /* Mediaquery's*/
 @media (max-width: 1278px) {
-    .line3::before {
+    .line3::before, .line4::before {
         width: 100%;
     }
 }
@@ -340,7 +349,7 @@ a {
     }
 }
   @media (max-width: 767px) {
-    .line::before, .line3::before, .line2::before {
+    .line::before, .line3::before, .line2::before, .line4::before {
         width: 80%;
       }
       h2 {
@@ -349,6 +358,13 @@ a {
     .projectTitel2 {
         font-size: 1.8rem;
         text-align: center;
+    }
+    .overlay a {
+        padding-right: 40px;
+    }
+    .text_head3 {
+        font-size: 1rem;
+        padding-left: 30px;
     }
 }
 @media (max-width: 991px) {
@@ -390,7 +406,7 @@ a {
 
 
 .nextCase {
-    border-top: 2px solid #000000;
+    border-top: 1px solid #000000;
     cursor: pointer;
     transition: .2s;
 }
@@ -412,10 +428,5 @@ a {
 @media (max-width: 574px) {
     .overlay a {
         font-size: 2rem;
-    }
-}
-@media (max-width: 574px) {
-    .overlay-content {
-        text-align: center;
     }
 }
