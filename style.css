@@ -10,12 +10,19 @@ body {
     background-size: cover;
 
 }
-
+.pulseButton {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+}
 .navbar-toggler {
     background: none;
     border: none;
     cursor: pointer;
-    padding: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 0;
     position: relative;
     z-index: 1001; 
 }
@@ -61,15 +68,16 @@ body {
 
 .overlay a {
     font-family: "Zen Dots", sans-serif;
-    padding: 8px;
+    padding-bottom: 8px;
     text-decoration: none;
     font-size: 5vw;
     color: #000000;
     display: block;
     transition: 0.2s;
-    padding-left: 3vw;
-    padding-right: 3vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
 }
+
 
 .overlay a:hover,
 .overlay a:focus {
@@ -180,6 +188,11 @@ a {
     transform: rotate(-1080deg);
     transition: transform 1s;
 }
+.logo_hover2{
+    padding-top: 10px;
+    width: 65px;
+    padding-left: 2vw;
+}
 
 .size_logo {
     width: 20px;
@@ -191,6 +204,10 @@ a {
 .text_head {
     padding-left: 10px;
     padding-bottom: 80px;
+}
+.text_head3 {
+    font-size: 2vw;
+    color: #000000;
 }
 .text_head2 {
     padding-left: 10px;
@@ -210,7 +227,7 @@ a {
     align-items: center;
     font-size: 18px;
     color: #000000;
-    border: 2px solid #000000;
+    border: 1px solid #000000;
     transition: 0.2s;
 }
 .knop1:hover {
@@ -222,9 +239,37 @@ a {
     padding-left: 10px;
 }
 
+circle {
+    stroke: #000000; 
+    stroke-width: 2px;
+    stroke-opacity: 1;
+  }
+  
+  .pulse {
+    fill: #000000;
+    fill-opacity: 0;
+    transform-origin: 50% 50%;
+    animation-duration: 2s;
+    animation-name: pulse;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes pulse {
+    from {
+      stroke-width: 3px;
+      stroke-opacity: 1;
+      transform: scale(0.3);
+    }
+    to {
+      stroke-width: 0;
+      stroke-opacity: 0;
+      transform: scale(2);
+    }
+  }
+
 
 .bigTitel {
-    font-size: 9vw;
+    font-size:7.88vw;
     font-weight: 700;
     color: #000000;
     margin-bottom: 1.5rem ;
@@ -278,6 +323,14 @@ h4 {
 .titelText {
     padding-top: 10px;
 }
+.titelText2 {
+    padding-top: 10px;
+    font-size: 1.2vw;
+}
+.splitsTitel {
+    display: flex;
+    justify-content: space-between;
+}
 h5 {
     font-size: 3vw;
     font-weight: 500;
@@ -308,7 +361,7 @@ p {
 .banner_wrapper {
     padding-left: 2vw;
     padding-right: 2vw;
-    padding-top: 10rem;
+    padding-top: 9rem;
     z-index: 1;
     width: 100%;
 }
@@ -333,15 +386,17 @@ p {
     position: relative;
     margin-bottom: 30px;
   }
-  
-.line3::before {
+  .line4 {
+    position: relative;
+  }
+.line3::before, .line4::before {
     content: '';
     position: absolute;
     bottom: 0;
     left: 50%; 
     transform: translateX(-50%); 
     width: 96%; 
-    height: 2px; 
+    height: 1px; 
     background-color: #000000;
   }
 .verticale_line {
@@ -355,7 +410,7 @@ p {
     top: 51%; 
     left: 0;
     transform: translateY(-50%); 
-    width: 2px;
+    width: 1px;
     height: 120%; 
     background-color: #000000; 
   }
@@ -530,7 +585,7 @@ div.scroll-doos img {
 }
 
 .instagram, .linkedin, .facebook {
-    border: 2px solid #000000;
+    border: 1px solid #000000;
     border-left: none;
 }
 .footer-text {
@@ -567,7 +622,7 @@ span.color_end {
     }
 }
 @media (max-width: 1278px) {
-    .line3::before {
+    .line3::before, .line4::before {
         width: 100%;
     }
    
@@ -628,9 +683,20 @@ span.color_end {
     }
 }
 @media (max-width: 767px) {
-    .line::before, .line3::before, .line2::before {
+    .overlay a {
+        padding-right: 40px;
+    }
+    .line::before, .line3::before, .line2::before, .line4::before {
         width: 80%;
       }
+      .text_head3 {
+        font-size: 1rem;
+        padding-left: 20px;
+    }
+    .pulseButton {
+        justify-content: center;
+        padding-bottom: 40px;
+    }
     h1 {
         font-size: 2.5rem;
         line-height: 3rem;
@@ -667,9 +733,16 @@ span.color_end {
         font-size: 1.5625rem;
         text-align: center;
     }
+    .titelText2 {
+        font-size: 1rem;
+    }
+    .splitsTitel {
+       flex-direction: column;
+    }
     .paragraaf_banner {
         font-size: 1.3625rem;
         text-align: center;
+        padding-bottom: 100px;
     }
     .verticale_line {
         padding: 0;
@@ -693,7 +766,7 @@ span.color_end {
     }
     .banner_wrapper {
         padding-top: 5rem;
-        height: 450px;
+        height: 480px;
     }
     a#scroll-btn {
         bottom: 2em;
@@ -726,6 +799,7 @@ span.color_end {
         padding-right: 20px; 
         padding-left: 20px;  
     }
+   
     .projectContainer {
         padding-right: 20px; 
         padding-left: 20px;  
@@ -734,9 +808,4 @@ span.color_end {
         font-size: 2rem;
     }
    
-}
-@media (max-width: 574px) {
-    .overlay-content {
-        text-align: center;
-    }
 }
