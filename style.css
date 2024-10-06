@@ -13,7 +13,7 @@ body {
 .pulseButton {
     display: flex;
     align-items: center;
-    padding-bottom: 20px;
+    padding-bottom: 140px;
 }
 .navbar-toggler {
     background: none;
@@ -269,7 +269,7 @@ circle {
 
 
 .bigTitel {
-    font-size:7.88vw;
+    font-size:7.8vw;
     font-weight: 700;
     color: #000000;
     margin-bottom: 1.5rem ;
@@ -347,7 +347,6 @@ p {
 .paragraaf_banner {
     font-size: 3vw;
     color: #f15a2a;
-    padding-bottom: 140px;
 }
 @media (min-width: 2000px) {
     .paragraaf_banner  {
@@ -361,7 +360,7 @@ p {
 .banner_wrapper {
     padding-left: 2vw;
     padding-right: 2vw;
-    padding-top: 9rem;
+    padding-top: 12rem;
     z-index: 1;
     width: 100%;
 }
@@ -765,7 +764,7 @@ span.color_end {
         border-right: none;
     }
     .banner_wrapper {
-        padding-top: 5rem;
+        padding-top: 9rem;
         height: 520px;
     }
     a#scroll-btn {
