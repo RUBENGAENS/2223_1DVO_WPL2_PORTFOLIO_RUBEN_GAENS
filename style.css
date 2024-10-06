@@ -269,11 +269,12 @@ circle {
 
 
 .bigTitel {
-    font-size:7.8vw;
+    font-size:7.65vw;
     font-weight: 700;
     color: #000000;
     margin-bottom: 1.5rem ;
     font-family: "Zen Dots", sans-serif;
+
 }
 
 
@@ -330,6 +331,12 @@ h4 {
 .splitsTitel {
     display: flex;
     justify-content: space-between;
+}
+.textPadd {
+    padding-right: 300px;
+}
+.textPadd:hover {
+  color: #f15a2a;
 }
 h5 {
     font-size: 3vw;
@@ -737,6 +744,9 @@ span.color_end {
     }
     .splitsTitel {
        flex-direction: column;
+    }
+    .textPadd {
+        padding-right: 0;
     }
     .paragraaf_banner {
         font-size: 1.3625rem;
