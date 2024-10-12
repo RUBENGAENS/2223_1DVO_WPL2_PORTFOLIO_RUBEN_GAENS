@@ -105,7 +105,7 @@
                 <p class="text_head">Designs</p>
             </div>
 
-            <div class="grouping mb-5 pb-5" data-aos="fade-up" data-aos-duration="800">
+            <div class="grouping mb-5 pb-5">
                 <div class="column">
                   <img src="assets/illustrator1.png">
                   <img src="assets/ontwerp2.png">
@@ -142,7 +142,7 @@
 
               <div class="container">
                 <div class="col-md-12 text-center pb-5 mb-5 pt-3 pb-3">
-              <img src="assets/typo.jpg" class="img-fluid w-100"  alt="foto" data-aos="zoom-in" data-aos-duration="800">
+              <img src="assets/typo.jpg" class="img-fluid w-100"  alt="foto">
             
               </div>
 
@@ -164,7 +164,7 @@
 
 
             
-            <img src="assets/posterExample.png" class="img-fluid w-100 pb-5 mb-5" alt="foto" data-aos="zoom-in" data-aos-duration="800">
+            <img src="assets/posterExample.png" class="img-fluid w-100 pb-5 mb-5" alt="foto">
 
 
             </section>
@@ -176,6 +176,13 @@
             </div>
 
             <script>
+document.addEventListener("DOMContentLoaded", function() {
+  const lazyImages = document.querySelectorAll("img[loading='lazy']");
+  lazyImages.forEach((img) => {
+      img.src = img.dataset.src;
+  });
+});
+
     AOS.init({
                 once: true 
             });
