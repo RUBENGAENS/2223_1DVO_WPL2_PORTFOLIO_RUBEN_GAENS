@@ -13,10 +13,6 @@ body {
 html {
     overflow-x: hidden;
 }
-.projectContainer {
-    padding-left: 2vw;
-    padding-right: 2vw;
-}
 h1 {
     font-size: 7vw;
     line-height: 9rem;
@@ -120,8 +116,8 @@ p {
     color: #000000;
     display: block;
     transition: 0.2s;
-    padding-left: 2vw;
-    padding-right: 2vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
 }
 
 .overlay a:hover,
@@ -143,8 +139,8 @@ p {
     padding: 0;
     width: 100%;
     border-bottom: 2px solid #000000;
-    padding-left: 2vw;
-    padding-right: 2vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
 }
 
 .navbar-brand {
@@ -196,8 +192,8 @@ p {
     animation: anim 15s infinite;
 }
 .projectContainer {
-    padding-left: 2vw;
-    padding-right: 2vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
 }
 
 @keyframes anim {
@@ -236,10 +232,6 @@ a {
     height: 20px;
 }
 
-.titelCase {
-    padding-left: 2vw;
-    padding-right: 2vw;
-}
 .spaceing {
     margin-top: 100px;
 }
@@ -282,7 +274,7 @@ a {
     bottom: 0;
     left: 50%; 
     transform: translateX(-50%); 
-    width: 96%; 
+    width: 98%; 
     height: 1px; 
     background-color: #000000;
   }
@@ -295,6 +287,8 @@ a {
     display: flex;
     flex-wrap: wrap;
     padding: 0 4px;
+    padding-left: 0.7vw;
+    padding-right: 0.7vw;
   }
   
 
@@ -309,7 +303,24 @@ a {
     vertical-align: middle;
     width: 100%;
   }
-  
+  .nextCase {
+    border-top: 1px solid #000000;
+    cursor: pointer;
+    transition: .2s;
+}
+.nextCase:hover {
+    background-color: #f15a2a;
+}
+.textCase {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 50px;
+    padding-right: 150px;
+    margin: 0;
+    font-family: "Zen Dots", sans-serif;
+    font-size: 22px;
+}
   /* Mediaquery's*/
 @media (max-width: 1278px) {
     .line3::before, .line4::before {
@@ -334,6 +345,14 @@ a {
     .text_head3 {
         font-size: 1rem;
         padding-left: 30px;
+    }
+    .projectContainer {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    .navbar {
+        padding-left: 12px;
+        padding-right: 12px;
     }
 }
 @media (max-width: 991px) {
@@ -373,24 +392,7 @@ a {
 
 }
 
-.nextCase {
-    border-top: 1px solid #000000;
-    cursor: pointer;
-    transition: .2s;
-}
-.nextCase:hover {
-    background-color: #f15a2a;
-}
-.textCase {
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    padding: 50px;
-    padding-right: 150px;
-    margin: 0;
-    font-family: "Zen Dots", sans-serif;
-    font-size: 22px;
-}
+
 
 
 @media (max-width: 574px) {

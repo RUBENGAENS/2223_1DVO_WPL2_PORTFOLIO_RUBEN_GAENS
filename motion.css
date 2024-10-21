@@ -13,10 +13,7 @@ body {
 html {
     overflow-x: hidden;
 }
-.titelCase {
-    padding-left: 2vw;
-    padding-right: 2vw;
-}
+
 h1 {
     font-size: 800%;
     line-height: 9rem;
@@ -122,8 +119,8 @@ p {
     color: #000000;
     display: block;
     transition: 0.2s;
-    padding-left: 4vw;
-    padding-right: 4vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
 }
 
 .overlay a:hover,
@@ -145,8 +142,8 @@ p {
     padding: 0;
     width: 100%;
     border-bottom: 2px solid #000000;
-    padding-left: 2vw;
-    padding-right: 2vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
 }
 
 .navbar-brand {
@@ -198,8 +195,8 @@ p {
     animation: anim 15s infinite;
 }
 .projectContainer {
-    padding-left: 2vw;
-    padding-right: 2vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
 }
 
 @keyframes anim {
@@ -282,7 +279,7 @@ a {
     bottom: 0;
     left: 50%; 
     transform: translateX(-50%); 
-    width: 96%; 
+    width: 98%; 
     height: 1px; 
     background-color: #000000;
   }

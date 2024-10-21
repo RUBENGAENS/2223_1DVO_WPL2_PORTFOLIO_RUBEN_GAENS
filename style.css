@@ -74,8 +74,8 @@ body {
     color: #000000;
     display: block;
     transition: 0.2s;
-    padding-left: 2vw;
-    padding-right: 2vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
 }
 
 
@@ -98,8 +98,8 @@ body {
     padding: 0;
     width: 100%;
     border-bottom: 2px solid #000000;
-    padding-left: 2vw;
-    padding-right: 2vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
 }
 
 .navbar-brand {
@@ -151,8 +151,8 @@ body {
     animation: anim 15s infinite;
 }
 .projectContainer {
-    padding-left: 2vw;
-    padding-right: 2vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
 }
 .extraPadding{
     padding-left: 3vw;
@@ -365,8 +365,8 @@ p {
     padding-top: 50px;
 }
 .banner_wrapper {
-    padding-left: 2vw;
-    padding-right: 2vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
     padding-top: 12rem;
     z-index: 1;
     width: 100%;
@@ -401,7 +401,7 @@ p {
     bottom: 0;
     left: 50%; 
     transform: translateX(-50%); 
-    width: 96%; 
+    width: 98%; 
     height: 1px; 
     background-color: #000000;
   }
@@ -691,6 +691,10 @@ span.color_end {
 @media (max-width: 767px) {
     .overlay a {
         padding-right: 40px;
+    }
+    .navbar {
+        padding-left: 12px;
+        padding-right: 12px;
     }
     .line::before, .line3::before, .line2::before, .line4::before {
         width: 80%;

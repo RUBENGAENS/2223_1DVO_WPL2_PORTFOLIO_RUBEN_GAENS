@@ -13,14 +13,7 @@ body {
 html {
     overflow-x: hidden;
 }
-.projectContainer {
-    padding-left: 2vw;
-    padding-right: 2vw;
-}
-.titelCase {
-    padding-left: 2vw;
-    padding-right: 2vw;
-}
+
 h1 {
     font-size: 7vw;
     line-height: 9rem;
@@ -126,8 +119,8 @@ p {
     color: #000000;
     display: block;
     transition: 0.2s;
-    padding-left: 2vw;
-    padding-right: 2vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
 }
 
 .overlay a:hover,
@@ -149,8 +142,8 @@ p {
     padding: 0;
     width: 100%;
     border-bottom: 2px solid #F0F0F0;
-    padding-left: 2vw;
-    padding-right: 2vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
 }
 
 .navbar-brand {
@@ -202,8 +195,8 @@ p {
     animation: anim 15s infinite;
 }
 .projectContainer {
-    padding-left: 2vw;
-    padding-right: 2vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
 }
 
 
@@ -287,7 +280,7 @@ a {
     bottom: 0;
     left: 50%; 
     transform: translateX(-50%); 
-    width: 96%; 
+    width: 98%; 
     height: 1px; 
     background-color: #F0F0F0;
   }
@@ -297,7 +290,7 @@ a {
     bottom: 0;
     left: 50%; 
     transform: translateX(-50%); 
-    width: 96%; 
+    width: 98%; 
     height: 1px; 
     background-color: #000000;
   }
@@ -332,7 +325,7 @@ main {
     justify-content: center;
     align-items: center;
     position: relative;
-    bottom: 180px;
+    bottom: 250px;
 }
 
 .marquee {
@@ -397,7 +390,7 @@ main {
 }
 .fotoRuben {
     padding-top: 90px;
-    width: 38%;
+    width: 35%;
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
     -webkit-transition: .3s ease-in-out;
@@ -555,6 +548,17 @@ main {
       }
       h2 {
         font-size: 1.875rem;
+    }
+    .projectContainer {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    .navbar {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    .textWidth {
+        max-width: 90%;
     }
 }
 @media (max-width: 991px) {
