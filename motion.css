@@ -327,6 +327,14 @@ a {
     .overlay a {
         padding-right: 40px;
     }
+    .projectContainer {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    .navbar {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
 }
 @media (max-width: 991px) {
     .header_wrapper .navbar-collapse {
