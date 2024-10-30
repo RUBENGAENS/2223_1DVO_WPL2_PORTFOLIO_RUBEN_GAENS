@@ -19,6 +19,7 @@ html {
     justify-content: center;
     padding-left: 1vw;
     padding-right: 1vw;
+    gap: 1rem;
 }
 .big {
     width: 100%;
