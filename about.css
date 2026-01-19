@@ -496,7 +496,7 @@ main {
     justify-content: center; 
 }
 .diploma {
-    width: 50%;
+    width: 70%;
     transition: 0.3s ease-in-out;
 }
 .diploma:hover {
